@@ -1,0 +1,228 @@
+
+
+@media screen and (min-width:1024px) {    
+/* Links principais na barra de navegação */
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 1.125em;
+    
+}
+
+.nav-links-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link-item {
+    position: relative;
+    margin-right: 0;
+}
+
+.nav-link-item  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    padding: 10px 10px;
+}
+
+.nav-link-item > a::after {
+    content: "";  /* Cria o pseudo-elemento (necessário para exibir algo) */
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.nav-link-item:hover > a::after,
+.nav-link-item.active > a::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+/* Fundo do dropdown */
+.dropdown-background {
+    position: fixed;
+    top: 8.4375em;  /* Manter a posição vertical como estava */
+    left: 50%;   /* Centraliza horizontalmente */
+    transform: translateX(-50%);  /* Ajusta para centralizar completamente */
+    width: 100vw;  /* Ajuste o tamanho conforme necessário */
+    height: 20.75em;  /* Ajuste o tamanho conforme necessário */
+    background-color: transparent;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 5%;  /* Manter a posição vertical como estava */
+    left: 50%;  /* Centraliza horizontalmente */
+    transform: translateX(-50%);  /* Ajusta para centralizar completamente */
+    background-color: #f1f1f1;
+    min-width: 350px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    visibility: hidden;
+    flex-direction: column;
+    width: 1000px;
+    height: auto;
+}
+
+.nav-link-item:hover .dropdown-background,
+.nav-link-item:hover .dropdown {
+    display: flex;
+    visibility: visible;
+}
+
+
+/* Container principal do dropdown */
+.dropdown-container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+}
+
+/* Itens do dropdown */
+.dropdown-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    flex: 1;
+    min-width: 200px;
+    margin-right: 15px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: #3a970e;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 16px;
+   
+}
+
+.icon-text img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Estiliza os links do dropdown */
+.dropdown-item a,
+.bottom-container a {
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 14px;
+    position: relative; /* Necessário para posicionar o sublinhado personalizado */
+}
+
+/* Estilo inicial do sublinhado */
+.dropdown-item a::after,
+.bottom-container a::after {
+    content: ""; /* Linha personalizada */
+    position: absolute;
+    left: 15px; /* Começa no lado esquerdo */
+    bottom: 0; /* Alinha na parte inferior */
+    width: 0; /* Inicialmente sem largura */
+    height: 4px; /* Altura da linha */
+    background-color: #3a970e; /* Cor do sublinhado */
+    border-radius: 10px ;
+    transition: width 0.3s ease; /* Suaviza a expansão da linha */
+}
+
+/* Efeito hover: cor do texto verde e animação do sublinhado */
+.dropdown-item a:hover,
+.bottom-container a:hover {
+    color: #127045; /* Texto verde ao passar o cursor */
+}
+
+.dropdown-item a:hover::after,
+.bottom-container a:hover:after {
+    width: 10%; /* A linha se expande até 1/3 do link */
+}
+
+
+
+.second-dropdown-item {
+    flex-grow: 2;
+}
+
+.second-dropdown-item .sublinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.dropdown-item .sublinks a {
+    padding: 8px 15px;
+    min-width: 200px;
+}
+
+/* Para o bottom-container, quebrar a linha */
+.bottom-container {
+    width: 100%;  /* Garante que o container tenha a largura total do dropdown */
+    padding-bottom: 10px;
+    display: flex;  /* Garante que o bottom-container ocupe toda a linha */
+    align-items: center;
+    color: #666666;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.bottom-container img{
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+}
+
+
+@media screen and (min-width:1050px) {
+    .dropdown{
+        width: 1026px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (min-width:1125px) {
+    .dropdown{
+        width: 1001px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .dropdown{
+        width: auto;
+        height: auto;
+    }
+    
+}

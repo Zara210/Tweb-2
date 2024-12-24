@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-FlyTap</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="main_css.css">  
+    <link rel="stylesheet" href="menu\menu_css.css">  
+    <link rel="stylesheet" href="login.css">  
+    <link rel="stylesheet" href="search_css.css">  
+    <link rel="stylesheet" href="slider\slider.css"> 
+    <link rel="stylesheet" href="menu_dropdown\menu_dropdown.css">
+    <link rel="stylesheet" href="container-actions.css">
+    <link rel="stylesheet" href="container-actions-pc.css">
+    
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    
+    <script src="menu\menu_js.js" defer></script>  
+    <script src="slider\slider.js" defer></script>  
+    <script src="main.js"></script>
+    <script src="container-actions\container-actions_js.js" defer ></script>
+    <script src="container-actions\container-js-pc.js" defer ></script>
+</head>
+<body>
+    <div class="alerta-banner">
+        <img src="img\left-arrow-previous-svgrepo-com.svg" class="seta-img">
+        <p class="nota">4 / 5</p>
+        <img src="img\right-arrow-previous-svgrepo-com.svg" class="seta-img">
+        <p class="descricao">Estado de catastro na região na de Valencia</p>
+        <a href="#VerTudo">Ver Tudo</a>
+
+    </div>
+    
+    <div class="custom-nav-bar">
+        <ul>
+            <li><a href="#link1">FLYTAP</a></li>
+            <li><a href="#link2">INSTITUCIONAL</a></li>
+            <li><a href="#link3">TAP CORPORATE</a></li>
+            <li><a href="#link4">TAP AIR CARGO</a></li>
+            <li><a href="#link5">TAP STORE</a></li>
+            <li><a href="#link6">INTERMEDIAÇÃO DE CRÉDITO</a></li>
+            <li style="display: inline-flex; align-items: center;">
+                <img src="img/flag-portugal.svg" style="width: 25px; height: 20px; margin-right: 5px;">
+                <a href="#link7">PT</a>
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <img src="img\TAPLogo_102022.svg" class="logo"> 
+        <img src="img\TAPLogo_102022_branco.svg" class="logo_branco"> 
+        <img src="img\TAPLogo1024.svg" class="logo_min"> 
+
+
+          <!-- Seção adicionada entre o logo e os botões PC -->
+        <div class="nav-links">
+            <ul class="nav-links-list">
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link1">Viajar</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\mundo.svg">
+                                        Explorar
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                        <a href="#">Melhores ofertas</a>
+                                        <a href="#">Promoções</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mini-Container 2: Icone + Links -->
+                                <div class="dropdown-item second-dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\book.svg">
+                                        Texto do Perfil
+                                    </div>
+                                    <div class="sublinks">
+                                        <a href="#">Ola mundo tudo bem?</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Voo + comboio</a>
+
+                                        <a href="#">TAP Gift Card</a>
+                                        <a href="#">Sublink 5</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mini-Container 3: Icone + Links -->
+                                <div class="dropdown-item second-dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\travel-with-tap.svg">
+                                        Texto do Perfil
+                                    </div>
+                                    <div class="sublinks">
+                                        <a href="#">Ola mundo tudo bem?</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Sublink 3</a>
+
+                                        <a href="#">Sublink 4</a>
+                                        <a href="#">Sublink 5</a>
+                                        <a href="#">Sublink 6   </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Novo container abaixo dos outros mini-containers -->
+                            <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img\warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </li>
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link2">Gerir reserva</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item second-dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\manage-booking-and-add-services.svg">
+                                        Texto do Mundo
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Sublink 1</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Sublink 3</a>
+                                        <a href="#">Sublink 4</a>
+                                        <a href="#">Sublink 5</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mini-Container 2: Icone + Links -->
+                                <div class="dropdown-item second-dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\before-flying.svg">
+                                        Texto do Perfil
+                                    </div>
+                                    <div class="sublinks">
+                                        <a href="#">Ola mundo tudo bem?</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Sublink 3</a>
+
+                                        <a href="#">Sublink 4</a>
+                                        <a href="#">Sublink 5</a>
+                                        <a href="#">Sublink 6</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Novo container abaixo dos outros mini-containers -->
+                             <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img\warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link3">Check-in</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\check-in.svg">
+                                        Efetuar Check-in
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img\warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link4">Antes da partida</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item second-dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\tap-experience-v3.svg">
+                                        <span>Experiência TAP</span>
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Sublink 1</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Sublink 3</a>
+                                        <a href="#">Sublink 4</a>
+                                        <a href="#">Sublink 5</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mini-Container 2: Icone + Links -->
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\at-the-airport.svg">
+                                        <span>No aeroporto</span>
+                                    </div>
+                                    <div class="sublinks">
+                                        <a href="#">Ola mundo tudo bem?</a>
+                                        <a href="#">Sublink 2</a>
+                                        <a href="#">Sublink 3</a>
+                                        <a href="#">Sublink 4</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\on-board.svg">
+                                        A bordo
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Novo container abaixo dos outros mini-containers -->
+                             <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img/warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link5">TAP Miles&Go</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\tap-miles-and-go-mile.svg">
+                                        O TAP Miles&Go
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                                  <!-- Mini-Container 1: Icone + Links -->
+                                  <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\earn-miles.svg">
+                                        Acumular milhas
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                                  <!-- Mini-Container 1: Icone + Links -->
+                                  <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\use-miles.svg">
+                                        Utilizar milhas
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                                  <!-- Mini-Container 1: Icone + Links -->
+                                  <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\promotions.svg">
+                                        Promoções
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img/warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-link-item has-dropdown">
+                    <a href="#link3">Ajuda</a>
+                    <div class="dropdown-background">
+                        <div class="dropdown">
+                            <!-- Container Principal para o Dropdown -->
+                            <div class="dropdown-container">
+                                <!-- Mini-Container 1: Icone + Links -->
+                                <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\support-and-faq-green-v2.svg">
+                                        Apoio ao Cliente
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                                 <!-- Mini-Container 1: Icone + Links -->
+                                 <div class="dropdown-item">
+                                    <div class="icon-text">
+                                        <img src="menu_dropdown\img\manage-booking-and-add-services.svg">
+                                        Informações Úteis
+                                    </div>
+                                    
+                                    <div class="sublinks">
+                                        <a href="#">Destinos TAP</a>
+                                        <a href="#">Inspiração para a sua viagem</a>
+                                        <a href="#">Pesquisar por preço</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-container">
+                                <!-- Conteúdo do novo container -->
+                                 <img src="img/warning-1-svgrepo-com.svg">
+                                <a>Requisitos de viagem</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>  
+
+
+        <div class="nav-buttons">
+            <!-- Botão de pesquisa -->
+            <button class="nav-btn search-btn" id="searchBtn">
+                <img src="img\search_icon.svg"> 
+            </button>
+
+            <!-- Botão de Login -->
+            <button class="nav-btn login-btn" id="loginBtn">
+                <img src="img\profile_verde.jpg"> 
+            </button>
+
+            <!-- Botão do Menu -->
+            <button class="nav-btn menu-btn" id="menuBtn">
+                <img src="img/menu_icon.svg"> 
+            </button>
+              <!-- Botão do Close -->
+            <button class="nav-btn close-btn" id="closeBtn">
+                <img src="img/x.svg">
+            </button>
+        </div>
+        
+        <!--Botões PC-->
+        <div class="nav-buttons_pc">
+    
+            <!-- Botão de Login -->
+            <button class="nav-btn login-btn" id="loginBtn">
+                <img src="img\profile_branco.png"> 
+            </button>
+
+             <a class="nav-text" href="#link1">Login e Registo</a>
+
+             <!-- Botão de pesquisa -->
+             <button class="nav-btn search-btn" id="searchBtn">
+                <img src="img\search_icon_verde.png"> 
+            </button>
+        </div>
+       <!-- Menu -->
+        <div class="menu-container" id="menu">
+            <!-- Lista principal do menu -->
+            <ul class="menu-list">
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#viajar">Viajar</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li class="has-submenu">
+                            <div class="menu-item">
+                                <a href="#explorar">Explorar <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a>
+                            </div>
+                            <ul class="submenu">
+                                <li><div class="menu-item"><a href="#destino-tap">Destinos TAP</a></div></li>
+                                <li><div class="menu-item"><a href="#inspiracao-viagem">Inspiração para sua viagem</a></div></li>
+                                <li><div class="menu-item"><a href="#pesq-preco">Pesquisa por preço</a></div></li>
+                                <li><div class="menu-item"><a href="#melhor-oferta">Melhores ofertas</a></div></li>
+                                <li><div class="menu-item"><a href="#promo">Promoções</a></div></li>
+                            </ul>
+                        </li>
+
+                        <li><div class="menu-item"><a href="#reservar">Reservar <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#viajar-na-tap">Viajar na TAP <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#gerirreserva">Gerir reserva</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li class="has-submenu">
+                            <div class="menu-item">
+                                <a href="#gerir-servicos">Gerir e adicionar serviços à reserva <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a>
+                            </div>
+                            <ul class="submenu">
+                                <li><div class="menu-item"><a href="#gestao_reserva">Gestão da reserva</a></div></li>
+                                <li><div class="menu-item"><a href="#extras-upgrades">Extras e Upgrades</a></div></li>
+                                <li><div class="menu-item"><a href="#aludar-viatura">Alugar uma viatura</a></div></li>
+                                <li><div class="menu-item"><a href="#fatura-online">Fatura online</a></div></li>
+                                <li><div class="menu-item"><a href="#tap-vouchers">TAP Vouchers</a></div></li>
+                                <li><div class="menu-item"><a href="#cancelamento-reembolso">Cancelamento e reembolso</a></div></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <div class="menu-item">
+                                <a href="#preparar-viagem">Preparar a viagem <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a>
+                            </div>
+                            <ul class="submenu">
+                                <li><div class="menu-item"><a href="#bagagem">Bagagem</a></div></li>
+                                <li><div class="menu-item"><a href="#t-checklist">Travel checklist</a></div></li>
+                                <li><div class="menu-item"><a href="#neces-especiais">Necessidades especiais</a></div></li>
+                                <li><div class="menu-item"><a href="#medo-voar">Perder o medo de voar</a></div></li>
+                                <li><div class="menu-item"><a href="#documentos">Documentacão</a></div></li>
+                                <li><div class="menu-item"><a href="#req-viagem">Requsitos viagem</a></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#check-in">Check-in</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li><div class="menu-item"><a href="#efe-check-in">Efetuar o Check-in<span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span> </a></div></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#ante-partida">Antes da partida</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li><div class="menu-item"><a href="#experiencia">Experiência TAP <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#aeroport">No aeroporto <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#bordo">A bordo <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#tap-miles-go">TAP Miles&Go</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li><div class="menu-item"><a href="#gtap-miles-go">O TAP Miles&Go<span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#acul-milhas">Acumular milhas<span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#usar-milhas">Usar milhas<span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#promoções">Promoções <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <div class="menu-item">
+                        <a href="#ajuda">Ajuda</a> <!-- Removido 'menu-item-main' -->
+                    </div>
+                    <ul class="submenu">
+                        <li><div class="menu-item"><a href="#apoio-cliente">Apoio Cliente <span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg"class="arrow"></span></a></div></li>
+                        <li><div class="menu-item"><a href="#info-util">Informações Úteis<span class="arrow"><img src="img\down-arrow2-svgrepo-com.svg" class="arrow-icon"></span></a></div></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        
+        <!-- Seção extra separada -->
+        <div class="flytap-box">
+            <p>FLYTAP</p>
+            <a href="#inti">INSTITUCIONAL</a>
+            <a href="#tapcorporate">TAP CORPORATE</a>
+            <a href="#tapaircargo">TAP AIR CARGO</a>
+            <a href="#tapsotre">TAP STORE</a>
+            <a href="#credito">Intermediação de Crédito</a>
+        </div>
+        <div class="footer-menu"> 
+            <!-- Seção requesito -->
+            <div class="requesito">
+                <img src="img\warning-1-svgrepo-com.svg">
+                <p>Requesitos de viagem</p>
+            </div>
+            <!-- Seção portugal -->
+            <div class="portugal">
+                <img src="img\flag-portugal.svg">
+                <p>Portugal/Português</p>
+            </div>
+        </div>
+    </nav>
+
+
+
+     <!-- Página principal -->
+    <div class="overlay"></div>
+        <div class="slider">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="slider/img/LAL.jpg">
+                    <div class="texto">Abrece a nova rota: Lisboa-Los Angeles</div>
+                    <div class="subtitulo">A partir de maio 2025, Lisboa-Los Angeles com 4 voos diretos semanais.</div>
+                    <button class="btn-slide">Reseve já</button>
+                </div>
+                <div class="slide">
+                    <img src="slider/img/BOS.jpg">
+                    <div class="texto">Abrece a nova rota: Porto-Boston</div>
+                    <div class="subtitulo">A partir de maio 2025, Porto-Boston com 4 voos diretos semanais.</div>
+                    <button class="btn-slide">Reseve já</button>
+                </div>
+                <div class="slide">
+                    <img src="slider/img/SanF.jpg">
+                    <div class="texto">Abrece a nova rota: Terceira-São Francisco</div>
+                    <div class="subtitulo">A partir de maio 2025, Terceira-São Francisco com 1 voos semanal.</div>
+                    <button class="btn-slide">Reseve já</button>
+                </div>
+            </div>
+            <!-- Indicadores -->
+            <div class="indicadores">
+                <span class="indicador" data-indice="0"></span>
+                <span class="indicador" data-indice="1"></span>
+                <span class="indicador" data-indice="2"></span>
+            </div>
+        </div>    
+
+        <!-- Novo container abaixo do slider -->
+        <div class="container-resto">
+            <div class="container-actions">
+                <div class="container-actions-2">
+                    <div class="container-action">
+                        <div class="header-container">
+                            <img src="container-actions\img\calendar-days-svgrepo-com.svg">
+                            <a>Reservar um voo</a>
+                        </div>
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="tipo-e-checkbox">
+                                <div class="tipo-voo">
+                                        <div>
+                                            <input type="radio" id="ida-volta" name="tipo-viagem" checked>
+                                            <label for="ida-volta">Ida e volta</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="so-ida" name="tipo-viagem">
+                                            <label for="so-ida">Só ida</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="multi-city" name="tipo-viagem">
+                                            <label for="multi-city">Multi-city</label>
+                                        </div>
+                                </div>
+                                
+                                <div class="checkbox-voo">
+                                    <div class="checkbox-voo-item">
+                                        <input type="checkbox" >
+                                        <label for="pagar-milhas">Pagar com milhas</label>
+                                    </div>
+                                    <div class="checkbox-voo-item">
+                                        <input type="checkbox">
+                                        <label for="melhores-ofertas">Mostrar todas as datas e melhores ofertas</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-viagem">
+
+                                <div class="container-viagem-origem">
+                                    <label for="origem">De:</label>
+                                    <div class="origem-container">
+                                        <div class="codigo-lisboa">LIS</div>
+                                        <label for="origem" class="origem-texto">Lisbon, Portugal</label>
+                                    </div>
+                                </div>
+
+                                <div class="container-viagem-destino">
+                                    <label for="destino" class="destino-texto">Para onde?</label>
+                                </div>
+
+                                <div class="container-viagem-data">
+                                    <label for="data" class="data-texto">Quando?</label>
+                                </div>
+                            </div>
+
+                            <div class="button-add-TAP">
+                                <button>Adicionar um TAP Stopover gratuito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-action">
+                        <div class="header-container">
+                            <img src="container-actions\img\bilhete.svg">
+                            <a>As minhas viagens</a>
+                        </div>
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="container-viagens">
+                                <div class="container-login">
+                                        <h1>Encontrar um formualrio de reserva existente</h1>
+                                        <div class="container-p">
+                                            <p>Escolher um lugar</p>
+                                            <p>Adicionar peças de bagagem de porão</p>
+                                            <p>Visualizar os dados da reserva</p>
+                                            <p>Concluir a reserva com Time to Think</p>
+                                        </div>
+                                    <button>Login</button>
+                                </div>
+                                <div class="divisor">
+                                    <span>OU</span>
+                                </div>
+                                <div class="container-reserva">
+                                    <h1>Insira os dados relativos à sua reserva</h1>
+                                    <div class="container-text">
+                                        <input type="text" placeholder="Referência da reseva ou o núemro do bilhete" >                                                 
+                                        <input type="text"  placeholder="Sobrenome" o>
+                                    </div>
+                                    <button>Encontrar reserva</button>
+                                </div>
+                            </div>
+                            <div class="container-links">
+                                <div class="link">
+                                    <a>
+                                        <img class="icon1" src="container-actions\img\money-bag-dollar-fundo-branco.svg" >
+                                        Consulte e submeta o seu pedido de reembolso
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a>
+                                        <img class="icon2" src="container-actions\img\bill-list-fundo-branco.svg" >
+                                        Pedir Fatura
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a>
+                                        <img class="icon3" src="container-actions/img/group-pessoas-fundo-branco.svg">
+                                        Os meus pedidos de grupo
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="container-action">
+                        <div class="header-container">
+                            <img src="container-actions\img\check-in.svg">
+                            <a>Check-in</a>
+                        </div>
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="container-viagens">
+                                <div class="container-login">
+                                        <h1>Login</h1>
+                                        <div class="container-p">
+                                            <p>Para visualizar a lista dos seus voos para check-in.</p>
+                                        </div>
+                                    <button>Login</button>
+                                </div>
+                                <div class="divisor">
+                                    <span>OU</span>
+                                </div>           
+                                <div class="container-reserva">
+                                    <h1>Insira os dados relativos à sua reserva</h1>
+                                    <div class="tipo-dados">
+                                        <div>
+                                            <input type="radio" id="referencia-reserva" name="tipo-dados" checked>
+                                            <label for="referencia-reserva">Referência da reserva</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="numero-tap" name="tipo-dados">
+                                            <label for="numero-tap">Número TAP Miles&Go</label>
+                                        </div>
+                                    </div>    
+                                    <div class="container-text">
+                                        <input type="text"  placeholder="Número da referência" >                                                 
+                                        <input type="text" placeholder="Apelido">
+                                    </div>
+                                    <button>Prosseguir</button>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="container-action">
+                        <div class="header-container">
+                            <img src="container-actions\img\plane.svg" >
+                            <a>Estado do voo</a>
+                        </div>
+                    
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="por-tipo-voo">
+                                <div>
+                                    <input type="radio" id="por-aeroporto" name="tipo-voo" checked>
+                                    <label for="por-aeroporto">Por aeroporto</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="por-origem-destino" name="tipo-voo">
+                                    <label for="por-origem-destino">Por origem e destino</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="por-voo" name="tipo-voo">
+                                    <label for="por-voo">Por voo</label>
+                                </div>
+                            </div>
+                            <div class="container-estado-voo">
+                                <!-- Tipo de Voo -->
+                                <div class="container-tipo-voo">
+                                    <img src="container-actions\img\plane-estado.svg">
+                                    <div class="selecionar-tipo-voo">
+                                        <label for="tipo-voo">Tipo de Vôo</label>
+                                        <select id="tipo-voo" class="tipo-voo-select" required>
+                                            <option value="ida">Voo de ida</option>
+                                            <option value="regresso">Voo de regresso</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Seleção de Data -->
+                                <div class="container-datas">
+                                    <img src="container-actions\img\calendar-days-fundo-branco.svg">
+                                    <div class="selecionar-data">
+                                        <label for="data-voo" class="destino-texto">Selecionar Datas</label>
+                                        <input type="date" id="data-voo" required>
+                                    </div>
+                                </div>
+                            
+                                <!-- Cidade de Partida/Regresso -->
+                                <div class="container-cidade">
+                                    <label for="data-voo" class="destino-texto">De onde?</label>
+                                    <input type="text" id="cidade" placeholder="Lisboa" required>
+                                </div>
+                            
+                                <!-- Botão de Prosseguir -->
+                                <div class="container-reserva">
+                                    <button id="prosseguir-btn">Prosseguir</button>
+                                </div>
+                            </div>
+                            <!-- Resultado do Voo -->
+                            <div id="resultado-voo" class="resultado" style="display: none;">
+                                <h2>Informações do Voo</h2>
+                                <div class="voos-container">
+                                    <!-- Informações do Voo 1 -->
+                                    <div class="voo">
+                                        <h3>Voo 1</h3>
+                                        <p>Número de Voo: <span id="numero-voo1"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo1"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo1"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo1"></span></p>
+                                    </div>
+                                
+                                    <!-- Informações do Voo 2 -->
+                                    <div class="voo">
+                                        <h3>Voo 2</h3>
+                                        <p>Número de Voo: <span id="numero-voo2"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo2"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo2"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo2"></span></p>
+                                    </div>
+                                    <div class="voo-cidade">
+                                        <p>Cidade de Partida/Regresso:</p>
+                                        <span id="cidade-voo"></span>  
+                                    </div>                      
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-container-actions">
+                        <div class="footer-container-action">
+                            <a>
+                            <img class="icon1"src="container-actions\img\car-fundo-branco.svg">
+                            Aluguer de automóveis
+                            </a>
+                        </div>
+                        <div class="footer-container-action">
+                            <a>
+                            <img class="icon2" src="container-actions\img\bus-fundo-branco.svg">
+                            Reservar transfer
+                            </a>
+                        </div>
+                        <div class="footer-container-action">
+                            <a>
+                            <img class="icon3" src="container-actions\img\hotel-fundo-branco.svg">
+                            Reservar um hotel
+                            </a>
+                        </div>
+                        <div class="footer-container-action-900px">
+                            <a>
+                            <img class="icon4"src="container-actions\img\security-fundo-branco.svg">
+                            Adicionar seguro
+                            </a>
+                        </div>
+                        <div class="footer-container-action-900px">
+                            <a>
+                            <img class="icon5" src="container-actions\img\photo-camera-svgrepo-com.svg">
+                            Visitas & Atividades
+                            </a>
+                        </div>
+                        <div class="footer-container-action-900px">
+                            <a class="footer-outros">
+                            Todas as opções de reserva
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Adicione o conteúdo desejado aqui -->
+                    <div class="footer-link">
+                    <a>
+                        Todas as opções de reserva
+                        <img class="img-link" src="container-actions/img/external_link.svg">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          
+        <!-- Novo container abaixo do slider - PC -->
+        <div class="container-pc">
+            <div class="container-actions">
+                <div class="container-actions-2">  
+                    <div class="headers-containers">
+                        <div class="header-container" id="reservar-voo-header">
+                            <img src="container-actions/img/calendar-days-svgrepo-com.svg">
+                            <a>Reservar um voo</a>
+                        </div>
+
+                        <div class="header-container" id="minhas-viagens-header">
+                            <img src="container-actions/img/bilhete.svg">
+                            <a>As minhas viagens</a>
+                        </div>
+                        <div class="header-container" id="estado-voo-header">
+                            <img src="container-actions\img\plane.svg" >
+                            <a>Estado do voo</a>
+                        </div>
+                    </div>
+                    <!--container-action-pc-->
+                    <div class="container-action" id="reserva-voo-container" style="display: none;">
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="tipo-e-checkbox">
+                                <div class="tipo-voo">
+                                        <div>
+                                            <input type="radio" name="tipo-viagem" checked>
+                                            <label for="ida-volta">Ida e volta</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="tipo-viagem">
+                                            <label for="so-ida">Só ida</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio"  name="tipo-viagem">
+                                            <label for="multi-city">Multi-city</label>
+                                        </div>
+                                </div>
+                                
+                                <div class="checkbox-voo">
+                                    <div class="checkbox-voo-item">
+                                        <input type="checkbox" >
+                                        <label for="pagar-milhas">Pagar com milhas</label>
+                                    </div>
+                                    <div class="checkbox-voo-item">
+                                        <input type="checkbox">
+                                        <label for="melhores-ofertas">Mostrar todas as datas e melhores ofertas</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-viagem">
+
+                                <div class="container-viagem-origem">
+                                    <label for="origem">De:</label>
+                                    <div class="origem-container">
+                                        <div class="codigo-lisboa">LIS</div>
+                                        <label for="origem" class="origem-texto">Lisbon, Portugal</label>
+                                    </div>
+                                </div>
+
+                                <div class="container-viagem-destino">
+                                    <label for="destino" class="destino-texto">Para onde?</label>
+                                </div>
+
+                                <div class="container-viagem-data">
+                                    <label for="data" class="data-texto">Quando?</label>
+                                </div>
+                            </div>
+
+                            <div class="button-add-TAP">
+                                <button>Adicionar um TAP Stopover gratuito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-action">
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="container-viagens">
+                                <div class="container-login">
+                                        <h1>Encontrar um formualrio de reserva existente</h1>
+                                        <div class="container-p">
+                                            <p>Escolher um lugar</p>
+                                            <p>Adicionar peças de bagagem de porão</p>
+                                            <p>Visualizar os dados da reserva</p>
+                                            <p>Concluir a reserva com Time to Think</p>
+                                        </div>
+                                    <button>Login</button>
+                                </div>
+                                <div class="divisor">
+                                    <span>OU</span>
+                                </div>
+                                <div class="container-reserva">
+                                    <h1>Insira os dados relativos à sua reserva</h1>
+                                    <div class="container-text">
+                                        <input type="text"  placeholder="Referência da reseva ou o núemro do bilhete" >                                                 
+                                        <input type="text" placeholder="Sobrenome" o>
+                                    </div>
+                                    <button>Encontrar reserva</button>
+                                </div>
+                            </div>
+                            <div class="container-links">
+                                <div class="link">
+                                    <a>
+                                        <img class="icon1" src="container-actions\img\money-bag-dollar-fundo-branco.svg" >
+                                        Consulte e submeta o seu pedido de reembolso
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a>
+                                        <img class="icon2" src="container-actions\img\bill-list-fundo-branco.svg" >
+                                        Pedir Fatura
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a>
+                                        <img class="icon3" src="container-actions/img/group-pessoas-fundo-branco.svg">
+                                        Os meus pedidos de grupo
+                                        <img class="img-link" src="container-actions\img\external_link.svg">
+                                    </a>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="container-action-pc" id="estado-voo-container" style="display: none;">
+                        
+                        <!-- Elementos adicionais escondidos inicialmente -->
+                        <div class="expanded-content">
+                            <div class="por-tipo-voo">
+                                <div>
+                                    <input type="radio" id="por-aeroporto-2" name="tipo-voo" checked>
+                                    <label for="por-aeroporto">Por aeroporto</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="por-origem-destino-2" name="tipo-voo">
+                                    <label for="por-origem-destino">Por origem e destino</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="por-voo-2" name="tipo-voo">
+                                    <label for="por-voo">Por voo</label>
+                                </div>
+                            </div>
+                            <div class="container-estado-voo">
+                                <!-- Tipo de Voo -->
+                                <div class="container-tipo-voo">
+                                    <img src="container-actions\img\plane-estado.svg">
+                                    <div class="selecionar-tipo-voo">
+                                        <label for="tipo-voo">Tipo de Vôo</label>
+                                        <select id="tipo-voo-2" class="tipo-voo-select" required>
+                                            <option value="ida">Voo de ida</option>
+                                            <option value="regresso">Voo de regresso</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Seleção de Data -->
+                                <div class="container-datas">
+                                    <img src="container-actions\img\calendar-days-fundo-branco.svg">
+                                    <div class="selecionar-data">
+                                        <label for="data-voo" class="destino-texto">Selecionar Datas</label>
+                                        <input type="date" id="data-voo-2" required>
+                                    </div>
+                                </div>
+                            
+                                <!-- Cidade de Partida/Regresso -->
+                                <div class="container-cidade">
+                                    <label for="data-voo" class="destino-texto">De onde?</label>
+                                    <input type="text" id="cidade-2" placeholder="Lisboa" required>
+                                </div>
+                            
+                                <!-- Botão de Prosseguir -->
+                                <div class="container-reserva">
+                                    <button id="prosseguir-btn-pc">Prosseguir</button>
+                                </div>
+                            </div>
+                            <!-- Resultado do Voo -->
+                            <div id="resultado-voo-2" class="resultado" style="display: none;">
+                                <h2>Informações do Voo</h2>
+                                <div class="voos-container">
+                                    <!-- Informações do Voo 1 -->
+                                    <div class="voo">
+                                        <h3>Voo 1</h3>
+                                        <p>Número de Voo: <span id="numero-voo1-2"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo1-2"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo1-2"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo1-2"></span></p>
+                                    </div>
+                                
+                                    <!-- Informações do Voo 2 -->
+                                    <div class="voo">
+                                        <h3>Voo 2</h3>
+                                        <p>Número de Voo: <span id="numero-voo2-2"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo2-2"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo2-2"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo2-2"></span></p>
+                                    </div>
+                                    <div class="voo-cidade">
+                                        <p>Cidade de Partida/Regresso:</p>
+                                        <span id="cidade-voo-2"></span>  
+                                    </div>                      
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      
+
+        <p>1</p><br>
+        <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br>    
+        <p>1</p><br> <p>1</p><br> 
+        <!-- Outros conteúdos -->
+         <!-- Footer do menu -->
+        <footer>
+            <p>© 2024, TAP. Todos os direitos reservados.</p>
+        </footer>
+      
+
+</body>
+</html>

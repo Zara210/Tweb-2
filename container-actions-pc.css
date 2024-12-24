@@ -1,0 +1,81 @@
+
+@media screen and (min-width:1024px) {
+    
+    .container-pc{
+        display: flex;
+    }
+    .container-resto{
+        display: none;
+    }
+
+    .container-actions-pc {
+        width: 94vw;
+        position: absolute;
+        top: 330px; 
+        left: 50%;
+        transform: translateX(-51%); /* Corrige o deslocamento horizontal */
+        display: flex;
+        box-sizing: border-box; /* Inclui padding/border no tamanho */
+    }
+
+
+    .container-actions-2-pc {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ocupa toda a largura disponível */
+        background-color: #f5f5f5; /* Fundo para estética */
+        border: 3px saddlebrown solid;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+      .headers-containers-pc {
+        border: 3px solid rgb(0, 241, 88);
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .headers-containers-pc img {
+        width: 1.875em;
+        margin-right: 0.625em;
+    }
+    .headers-containers-pc a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+    }
+        
+
+    .header-container-pc {
+        padding: 0.9375em 0; /* Espaçamento interno */
+        border: 3px solid bl; /* Apenas para visualização */
+        margin: 0; /* Remove qualquer margem extra */
+        flex-grow: 1;
+        border: 2px solid blue;
+    }
+    
+    .container-action-pc{
+        display: none;
+        border: 9px solid rgb(255, 0, 225);
+    }
+
+    .container-action-pc .expanded-content-pc {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Espaçamento entre os elementos */
+    }
+    
+    
+        
+    .container-actions-pc p{
+        color: black;
+    }
+
+}

@@ -1,0 +1,954 @@
+/*Container*/
+.container-actions { 
+    margin: 1.625em 0.625em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-pc{
+    display: none;
+}
+
+.container-actions-2{
+    border: 3px solid #127045;
+}
+
+.container-action {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 0.3125em;
+    color: white;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    border: 0.0625em solid #ededed; 
+    transition: border-top 0.3s ease;
+}
+
+.container-action.expandido {
+    border-top: 0.5625em solid #72be44;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    padding: 0.625em;
+    width: 100%;
+    margin: 0 auto;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+}
+
+.container-action img {
+    width: 1.875em;
+    margin-right: 0.625em;
+}
+
+.container-action a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.9375em 0.3125em;
+    cursor: pointer;
+}
+
+/* Inicialmente sem a borda no <a> */
+.header-container a {
+    position: relative;
+    display: inline-block;
+    padding: 0.3125em;
+    font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+
+/*Expandido*/
+.expanded-content {
+    margin-top: 0.625em;
+    max-height: 0; /* Começa com altura 0 */
+    opacity: 0; /* Começa invisível */
+    overflow: hidden; /* Esconde qualquer conteúdo além do limite */
+    width: 100%;
+    text-align: left;
+    transition: max-height 0s ease, opacity 0.6s ease; /* Sem animação de max-height, animação de opacidade */
+}
+
+/* Quando expandido, torna a altura normal e visível */
+.container-action.expandido .expanded-content {
+    max-height: 1000px; /* Limite alto suficiente para o conteúdo */
+    opacity: 1; /* Tornar visível */
+    transition: max-height 0.3s ease, opacity 0.6s ease; /* Animação apenas para max-height ao expandir */
+}
+
+/* A borda começa com largura 0 e é posicionada na parte superior */
+.header-container a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;  
+    height: 0.25em;  
+    border-radius: 0.3125em;
+    background-color: #127045;  
+    transition: width 0.3s ease; 
+}
+
+/* Ao adicionar a classe expandido ao container-action, a  */
+.container-action.expandido .header-container a::before {
+    width: 1.5625em; 
+}
+
+
+@media screen and (min-width:900px) {
+    .container-actions { 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-1.5625em);
+        border-top: 0.7625em solid #72be44; 
+        border-radius: 0.325em;
+        margin: 0.9375em;
+    }
+
+    .container-action {
+        margin: 0; 
+        background-color: #f5f5f5;
+        color: white;
+        cursor: pointer; 
+        border: none; 
+        transition: all 0.6s ease; /* Transição suave para todas as propriedades */
+    }
+
+    /* Quando expandido, não exibe a borda verde */
+    .container-action.expandido {
+        border-top: none; /* Remove a borda superior verde quando expandido */
+        background-color: #f5f5f5;
+        flex-direction: column;
+        padding: 0.625em;
+        width: 100%;
+        margin: 0 auto;  
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    
+    .container-pc{
+        display: flex;
+    }
+    .container-resto{
+        display: none;
+    }
+
+    .container-actions {
+        width: 94vw;
+        position: absolute;
+        top: 330px; 
+        left: 50%;
+        transform: translateX(-51%); /* Corrige o deslocamento horizontal */
+        display: flex;
+        box-sizing: border-box; /* Inclui padding/border no tamanho */
+    }
+
+
+    .container-actions-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ocupa toda a largura disponível */
+        background-color: #f5f5f5; /* Fundo para estética */
+        border: 3px saddlebrown solid;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+      .headers-containers{
+        border: 3px solid rgb(0, 241, 88);
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .headers-containers img {
+        width: 1.875em;
+        margin-right: 0.625em;
+    }
+    .headers-containers a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+    }
+        
+
+    .header-container {
+        padding: 0.9375em 0; /* Espaçamento interno */
+        border: 3px solid bl; /* Apenas para visualização */
+        margin: 0; /* Remove qualquer margem extra */
+        flex-grow: 1;
+        border: 2px solid blue;
+    }
+    
+    .container-action{
+        display: none;
+        border: 9px solid rgb(255, 0, 225);
+    }
+
+    .container-action .expanded-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Espaçamento entre os elementos */
+    }
+    
+    
+        
+    .container-actions p{
+        color: black;
+    }
+
+}
+
+
+
+@media screen and (min-width:1210px) {
+    
+}
+
+/*Reservar um Voo*/
+
+/* Tipo de voo */
+.tipo-voo,
+.tipo-dados,
+.por-tipo-voo {
+    display: flex;
+    justify-content: center;
+    padding: 0.625em 0;
+}
+
+.tipo-voo input[type="radio"],
+.tipo-dados input[type="radio"],
+.por-tipo-voo input[type="radio"]  {
+    display: none; /* Manter ocultos, mas deixá-los acessíveis para interatividade */
+}
+
+.tipo-voo label{
+    padding: 0.4375em 3.529em;  
+}
+
+.tipo-voo label,
+.tipo-dados label,
+.por-tipo-voo label {
+    margin: 0.25em;
+    background-color: #ededed;
+    color: #2c2c2c;
+    border-radius: 3.75em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.tipo-voo label:hover,
+.tipo-dados label:hover,
+.por-tipo-voo label:hover {
+    color: #127045;
+}
+
+.tipo-voo input[type="radio"]:checked + label,
+.tipo-dados input[type="radio"]:checked + label,
+.por-tipo-voo input[type="radio"]:checked + label {
+    background-color: #127045;
+    color: white;
+    border-color: #127045;
+}
+
+
+/* Checkbox */
+.checkbox-voo {
+    padding: 0.9375em 0;
+    font-size: 1rem;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #2c2c2c;
+}
+
+.checkbox-voo-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-voo input[type="checkbox"] {
+    width: 1.5625em;
+    height: 1.5625em;
+    margin: 0.3125em;
+    background-color: #ffffff;
+    border: 0.125em solid #d0d0d0; /* Borda mais fina e clara */
+    border-radius: 0.25em;
+    transition: border-color 0.3s ease;
+}
+
+.checkbox-voo input[type="checkbox"]:hover {
+    border-color: #2c2c2c; 
+}
+
+
+.tipo-e-checkbox {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+@media screen and (min-width:900px) {
+
+    
+    .tipo-e-checkbox {
+        flex-direction: row;
+        
+        align-items: center; 
+    }
+    .checkbox-voo {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25em; 
+    }
+}
+
+
+/*Label*/
+.container-viagem,
+.container-estado-voo {
+    font-size: 1rem;
+    color: #6d6d6d;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container-viagem-origem,
+.container-viagem-destino,
+.container-viagem-data
+ {
+    padding: 0.625em;
+    margin: 0.625em;
+    min-height: 5em;
+    border: 0.0625em solid #e3e3e3;
+    background-color: #ffffff;
+    border-radius: 0.3125em;
+}
+
+
+.container-viagem-destino,
+.container-viagem-data,
+.origem-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.codigo-lisboa {
+    background-color: #127045; 
+    color: white; 
+    padding: 0.125em 0.625em; 
+    border-radius: 0.125em; 
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0.625em; /
+}
+
+.origem-texto {
+    padding: 0.625em;
+    margin: 0; 
+    color: #333333;
+    font-weight: bold;
+    border-radius: 0.25em;
+    flex-grow: 1; /* Faz com que a label ocupe o restante do espaço disponível */
+    white-space: nowrap; 
+}
+
+.destino-texto{
+    font-style: italic;
+}
+
+.container-viagem-data{
+    display: none;
+}
+
+
+
+@media screen and (min-width:900px) {
+    
+    .container-viagem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+    .container-viagem-origem,
+    .container-viagem-destino,
+    .container-viagem-data {
+        flex-grow: 1; /* Os contêineres internos irão ocupar o máximo de espaço */
+    }
+
+    .container-viagem-data{
+        display: flex;
+    }
+
+    .data-texto{
+        font-style: italic;
+    }
+}
+
+
+
+
+/* Botão */
+.button-add-TAP button {
+    display: block;
+    width: 97%;
+    margin: 0.625em auto 0;
+    padding: 0.625em 1.25em;
+    background-color: white;
+    color: #127045;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: none; /* Remove as bordas padrão */
+    border-bottom: 0.125em solid #127045; /* Adiciona borda apenas na parte inferior */
+    border-radius: 0.3125em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para fundo e cor */
+}
+
+.button-add-TAP button:hover {
+    background-color: #127045;
+    color: white;
+}
+
+
+/*As minhas Viagens*/
+
+.container-login h1,
+.container-reserva h1{
+    font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2c2c2c;
+    
+}
+
+.container-p{
+    padding: 0.625em;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container-login p{
+    padding: 0.5em;
+    color: #2c2c2c;
+}
+
+.container-login button,
+.container-reserva button {
+    display: block;          
+    margin-left: auto;       /* Centraliza o botão à esquerda */
+    margin-right: auto;      /* Centraliza o botão à direita */
+    width: 95%;              
+    padding: 0.9375em 1.25em;     
+    background-color: #72be44;
+    color: #2c2c2c;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para fundo e cor */
+}
+
+.container-login button:hover,
+.container-reserva button:hover{
+    background-color: #9ee851;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ajusta à largura do container */
+    margin: 1.25em 0; /* Espaçamento acima e abaixo */
+}
+
+.divisor::before,
+.divisor::after {
+    content: '';
+    flex: 1; /* Faz as linhas ocuparem o espaço disponível */
+    border-bottom: 0.0625em solid #ccc; /* Linha cinza */
+    margin: 0 0.625em; /* Espaçamento entre a linha e o texto */
+}
+
+.divisor span {
+    font-family: Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #666; /* Cor do texto */
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 0.625em;
+}
+
+.container-text input{
+    padding:1.25em 2.5em;
+    margin: 0.3125em;
+    border: 0.0625em solid #e3e3e3 ;
+}
+
+@media screen and (min-width:900px) {
+    
+    .container-viagens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    .divisor {
+        display: none;
+    }
+}
+
+.container-links {
+    background-color: #ededed;
+    margin-top: 0.625em;
+    padding: 0.9375em;
+    border-radius: 0.3125em;
+    width: 100%; 
+
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0;
+    margin-bottom: 0.5em; 
+}
+
+.link img.icon1,
+.link img.icon2,
+.link img.icon3 {
+    width: 2.125em; 
+    height: 2.125em;
+    margin-right: 0.625em;
+}
+
+.link a,
+.footer-link a {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #127045;
+}
+
+.link a:hover {
+    text-decoration: underline;
+
+}
+
+.link a:hover .icon1 {
+    content: url('img-money-bag-dollar-fundo-verde.svg'); 
+}
+
+.link a:hover .icon2 {
+    content: url('img-bill-list-fundo-verde.svg'); 
+
+}
+.link a:hover .icon3 {
+    content: url('img-grupo-pessoas-fundo-verde.svg'); 
+
+}
+
+.link a .img-link {
+    width: 1.125em; 
+    height: 1.125em;
+    margin-left: 0.3125em; 
+}
+
+@media screen and (min-width:900px) {
+    
+    .container-links{
+        display: flex;
+        flex-direction: row;
+      
+    } 
+    .container-links .link .img-link {
+        width: 2.00em; /* Aumenta o tamanho da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+/*Chek-in*/
+
+.tipo-dados label{
+    padding: 0.4375em 3.300em;  
+}
+
+/*Estado Voo*/
+
+
+
+
+.por-tipo-voo label{
+    padding: 0.4375em 2.300em;  
+}
+
+.container-tipo-voo,
+.container-datas{
+    border: 0.0625em solid #e3e3e3;
+    padding: 1.125em;
+    margin: 0.9375em;
+    border-radius: 0.3125em; 
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    transition: 0.3s ease;
+}
+
+.container-tipo-voo img,
+.container-datas img {
+    width: 2.1875em;
+    margin-left: 0.625em;
+}
+
+.selecionar-tipo-voo {
+    margin-left: 0.9375em;
+    width: 100%;
+}
+
+.selecionar-tipo-voo label {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.tipo-voo-select {
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tipo-voo-select option {
+    font-size: 1rem;
+}
+
+.selecionar-data {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    width: 100%;
+}
+
+#data-voo {
+    font-size: 0.9375em;
+    margin-top: 0.3125em;
+    outline: none;
+    border: none;
+    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container-cidade {
+        border: 0.0625em solid #e3e3e3;
+        padding: 1.125em;
+        margin: 0.9375em;
+        border-radius: 0.3125em; 
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: 0.3s ease;
+}
+.container-cidade label{
+    font-size: 1rem;
+}
+
+.container-cidade input{
+    border: none;
+    outline: none;
+    font-style: italic;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 0.625em;
+}
+
+@media screen and (min-width: 900px) {
+
+    .container-estado-voo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que os itens "quebrem" para a linha seguinte */
+        justify-content: space-between; /* Espaça os itens igualmente */    
+    }
+
+    .container-tipo-voo,
+    .container-datas,
+    .container-cidade {
+        flex-basis: 48%; /* Cada contêiner ocupa 48% da largura disponível, permitindo 2 itens por linha */
+        margin: 0.375em 0; /* Ajusta a margem para não haver grande espaço entre os itens */
+    }
+    #prosseguir-btn{
+        margin-top: 3em;
+    }
+    .resultado {
+        margin-top: 1.25em;
+        padding: 0.9375em;
+        border: 0.0625em solid #ff0000;
+        border-radius: 0.3125em;
+        background-color: #f9f9f9;
+    }
+}
+
+
+
+/* Inicialmente, o resultado dos voos está escondido */
+#resultado-voo {
+    display: none; /* Esconde o conteúdo até o botão 'Prosseguir' ser clicado */
+}
+
+.resultado {
+    margin-top: 1.25em;
+    padding: 0.9375em;
+    border: 0.0625em solid #e3e3e3;
+    border-radius: 0.3125em;
+    background-color: #f9f9f9;
+}
+.voos-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em uma única coluna */
+    gap: 1.25em; /* Espaçamento vertical entre os voos */
+    margin-top: 0.9375em;
+}
+
+.voo,
+.voo-cidade{
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    padding: 0.625em;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #2c2c2c;
+    padding: 0.3125em;
+    font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
+}
+
+.voo h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.625em;
+    color: #333;
+}
+
+.voo p {
+    margin: 0.3125em 0;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.voo-cidade {
+    display: flex;
+    flex-direction: column;
+    padding: 0.625em;
+}
+.voo-cidade p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.voo-cidade span {
+    margin-top: 0.3125em;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+  }
+
+.footer-container-actions{
+    border: 0.0625em solid #ededed;
+    border-radius: 0.625em;
+    width: 100%;
+    padding: 0.625em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 0.625em; 
+    margin: 1.25em;
+}
+    
+.footer-container-action,
+.footer-container-action-900px {
+    color: #2c2c2c;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 0.625em;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+
+.footer-container-action:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.0625em; 
+    height: 100%;
+    background-color: #ededed; 
+}
+
+.footer-container-action a,
+.footer-container-action-900px a {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer-container-action a:hover,
+.footer-container-action-900px a:hover {
+   color: #127045;
+   text-decoration: underline;
+}
+
+.footer-container-action a img,
+.footer-container-action-900px a img{
+    width: 1.875em;
+}
+
+.footer-container-action a:hover .icon1{
+    content: url('car-fundo-verde.svg');
+}
+
+.footer-container-action a:hover .icon2{
+    content: url('bus-fundo-verde.svg');
+}
+.footer-container-action a:hover .icon3{
+    content: url('hotel-fundo-verde.svg');
+}
+
+.footer-container-action-900px a:hover .icon4{
+    content: url('security-fundo-verde.svg');
+}
+
+.footer-container-action-900px a:hover .icon5{
+    content: url('photo-camera-fundo-verde.svg');
+}
+
+.footer-container-action-900px {
+    display: none;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center; 
+}
+
+.footer-link a:hover{
+    text-decoration: underline; 
+}
+
+.img-link {
+    margin-left: 0.3125em; 
+    width: 1em; 
+    height: 1em;
+}
+
+@media screen and (min-width:900px) {
+
+
+    .footer-container-action-900px  {
+        display: flex; 
+    }
+    .footer-outros{
+        color: #127045;
+    }
+        
+}
+
+
+@media screen and (max-width:540px) {
+.tipo-voo,
+.tipo-dados,
+.por-tipo-voo {
+    justify-content: flex-start; /* Alinha os items à esquerda */
+}
+
+.tipo-voo label,
+.tipo-dados label,
+.por-tipo-voo label {
+    text-align: left; /* Alinha o texto dentro do label à esquerda */
+    padding: 0.3125em 0.625em; /* Ajusta o padding para alinhar o label corretamente */
+}
+}
+
+
+
+@media screen and (min-width:605px) {
+
+.tipo-voo,
+.tipo-dados,
+.por-tipo-voo  {
+    justify-content: flex-start; /* Alinha os items à esquerda */
+}
+
+.tipo-voo label,
+.tipo-dados label,
+.por-tipo-voo label {
+    text-align: left; /* Alinha o texto dentro do label à esquerda */
+    padding: 0.3125em 1.25em; /* Ajusta o padding para alinhar o label corretamente */
+}
+    
+
+
+
+}
+
