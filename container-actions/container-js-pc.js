@@ -1,15 +1,21 @@
-// Selecionar os elementos existentes
+
+
 const reservarVooHeader = document.getElementById("reservar-voo-header");
 const reservaVooContainer = document.getElementById("reserva-voo-container");
-const estadoVooHeader = document.getElementById("estado-voo-header");
-const estadoVooContainer = document.getElementById("estado-voo-container");
-const resultadoVooDiv = document.getElementById("resultado-voo-pc");
-
-// Selecionar os novos elementos para "Minhas Viagens" e "Check-In"
 const minhasViagensHeader = document.getElementById("minhas-viagens-header");
 const minhasViagensContainer = document.getElementById("minhas-viagens-container");
 const checkInHeader = document.getElementById("check-in-header");
 const checkInContainer = document.getElementById("check-in-container");
+const estadoVooHeader = document.getElementById("estado-voo-header");
+const estadoVooContainer = document.getElementById("estado-voo-container");
+const resultadoVooDiv = document.getElementById("resultado-voo-pc");
+
+
+
+// Abertura automática do container "Reserva de voo" ao carregar a página
+window.addEventListener('DOMContentLoaded', () => {
+    toggleContainer(reservaVooContainer, reservarVooHeader);
+});
 
 // Função para fechar todos os containers e suas linhas
 function fecharTodosContainers() {
@@ -17,16 +23,13 @@ function fecharTodosContainers() {
     const headers = [reservarVooHeader,estadoVooHeader,minhasViagensHeader,checkInHeader,];
 
     containers.forEach(container => {
-        if (container) {
+        
             container.classList.remove("expandido");
             container.style.display = "none";
-        }
     });
 
     headers.forEach(header => {
-        if (header) {
             header.classList.remove("linha");
-        }
     });
     resultadoVooDiv.style.display = "none";
 }

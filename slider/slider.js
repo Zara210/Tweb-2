@@ -77,3 +77,9 @@ indicadores.forEach(indicador => {
 
 // Ajusta o slider ao redimensionar a janela
 window.addEventListener('resize', definirPosicaoPorIndice);
+
+// Troca de imagem a cada 8 segundos
+setInterval(() => {
+    indiceAtual = (indiceAtual + 1) % slides.length; // Próximo slide
+    definirPosicaoPorIndice();
+}, 8000); // 8000 milissegundos = 8 segundos
