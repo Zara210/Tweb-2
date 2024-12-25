@@ -1,82 +1,114 @@
-
-@media screen and (min-width:1024px) {
-    
-    .container-pc{
+@media screen and (min-width: 1024px) {
+    .container-pc {
         display: flex;
     }
-    .container-resto{
+
+    .container-resto {
         display: none;
     }
 
-    .container-actions-pc {
+    .container-actions {
         width: 94vw;
         position: absolute;
-        top: 330px; 
+        top: 330px;
         left: 50%;
-        transform: translateX(-51%); /* Corrige o deslocamento horizontal */
+        transform: translateX(-51%);
         display: flex;
-        box-sizing: border-box; /* Inclui padding/border no tamanho */
     }
 
-
-    .container-actions-2-pc {
+    .container-actions-2 {
         display: flex;
         flex-direction: column;
-        width: 100%; /* Ocupa toda a largura disponível */
-        background-color: #f5f5f5; /* Fundo para estética */
-        border: 3px saddlebrown solid;
+        width: 100%;
+        background-color: #f5f5f5;
         align-items: center;
         justify-content: center;
-        
     }
 
-
-      .headers-containers-pc {
-        border: 3px solid rgb(0, 241, 88);
+    .headers-containers {
         display: flex;
         flex-direction: row;
-        width: 100%; 
-        padding: 15px;
-        margin: 15px;
+        width: 100%;
     }
 
-    .headers-containers-pc img {
+    .headers-containers img {
         width: 1.875em;
         margin-right: 0.625em;
+        display: none;
     }
-    .headers-containers-pc a {
+
+    .headers-containers a {
         text-decoration: none;
         color: #2c2c2c;
         font-size: 1rem;
-        font-weight: bold;
         font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
-    }
-        
-
-    .header-container-pc {
-        padding: 0.9375em 0; /* Espaçamento interno */
-        border: 3px solid bl; /* Apenas para visualização */
-        margin: 0; /* Remove qualquer margem extra */
-        flex-grow: 1;
-        border: 2px solid blue;
-    }
-    
-    .container-action-pc{
-        display: none;
-        border: 9px solid rgb(255, 0, 225);
+        position: relative;
     }
 
-    .container-action-pc .expanded-content-pc {
+    .header-container {
         display: flex;
-        flex-direction: column;
-        gap: 15px; /* Espaçamento entre os elementos */
-    }
-    
-    
-        
-    .container-actions-pc p{
-        color: black;
+        align-items: center; 
+        justify-content: center; 
+        background-color: white;
+        border: 1px solid #ededed;
     }
 
+    .header-container a:hover {
+        color: #127045;
+    }
+
+    /* Estilos para a linha expandida */
+    .header-container.linha {
+        background-color: #f5f5f5; /* Cor de fundo da linha quando expandida */
+        font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .header-container.linha a::before {
+        width: 1.5625em; 
+        font-weight: bold;
+        font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .header-container.linha img {
+        display: block;
+    }
+
+    .container-action-pc {
+        display: none;
+    }
+
+    .container-viagens {
+        display: flex;
+        justify-content: space-between; 
+        align-items: stretch; 
+    }
+
+    .container-login {
+        border-right: 2px solid #ededed;
+        border-radius: 0.3125em ;
+        flex: 1;
+        padding: 1em;
+        margin-right: 1em;
+    }
+    
+    .container-viagens .container-reserva {
+        flex: 1;
+        padding: 1em; 
+    }
+
+    .container-text{
+        gap: 0.80em;
+        padding: 0.3125em;
+    }
+    
+    .container-links{
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
+
 

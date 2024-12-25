@@ -11,7 +11,7 @@
 }
 
 .container-actions-2{
-    border: 3px solid #127045;
+  
 }
 
 .container-action {
@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-/* Inicialmente sem a borda no <a> */
+
 .header-container a {
     position: relative;
     display: inline-block;
@@ -72,22 +72,23 @@
 /*Expandido*/
 .expanded-content {
     margin-top: 0.625em;
-    max-height: 0; /* Começa com altura 0 */
-    opacity: 0; /* Começa invisível */
-    overflow: hidden; /* Esconde qualquer conteúdo além do limite */
+    max-height: 0;
+    opacity: 0; 
+    overflow: hidden; 
     width: 100%;
     text-align: left;
-    transition: max-height 0s ease, opacity 0.6s ease; /* Sem animação de max-height, animação de opacidade */
+    transition: max-height 0s ease, opacity 0.6s ease; 
 }
 
-/* Quando expandido, torna a altura normal e visível */
-.container-action.expandido .expanded-content {
-    max-height: 1000px; /* Limite alto suficiente para o conteúdo */
-    opacity: 1; /* Tornar visível */
-    transition: max-height 0.3s ease, opacity 0.6s ease; /* Animação apenas para max-height ao expandir */
+
+.container-action.expandido .expanded-content,
+.container-action-pc.expandido .expanded-content  {
+    max-height: 1000px; 
+    opacity: 1; 
+    transition: max-height 0.6s ease, opacity 0.6s ease;
 }
 
-/* A borda começa com largura 0 e é posicionada na parte superior */
+
 .header-container a::before {
     content: "";
     position: absolute;
@@ -96,11 +97,11 @@
     height: 0.25em;  
     border-radius: 0.3125em;
     background-color: #127045;  
-    transition: width 0.3s ease; 
+    transition: width 0.6s ease; 
 }
 
-/* Ao adicionar a classe expandido ao container-action, a  */
-.container-action.expandido .header-container a::before {
+
+.container-action.expandido .header-container a::before{
     width: 1.5625em; 
 }
 
@@ -122,109 +123,24 @@
         color: white;
         cursor: pointer; 
         border: none; 
-        transition: all 0.6s ease; /* Transição suave para todas as propriedades */
+        transition: all 0.6s ease; /
     }
 
-    /* Quando expandido, não exibe a borda verde */
-    .container-action.expandido {
-        border-top: none; /* Remove a borda superior verde quando expandido */
+   
+    .container-action.expandido,
+    .container-action-pc.expandido {
+        border-top: none; 
         background-color: #f5f5f5;
         flex-direction: column;
         padding: 0.625em;
         width: 100%;
         margin: 0 auto;  
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
-
     }
 }
 
 
-@media screen and (min-width:1024px) {
-    
-    .container-pc{
-        display: flex;
-    }
-    .container-resto{
-        display: none;
-    }
 
-    .container-actions {
-        width: 94vw;
-        position: absolute;
-        top: 330px; 
-        left: 50%;
-        transform: translateX(-51%); /* Corrige o deslocamento horizontal */
-        display: flex;
-        box-sizing: border-box; /* Inclui padding/border no tamanho */
-    }
-
-
-    .container-actions-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%; /* Ocupa toda a largura disponível */
-        background-color: #f5f5f5; /* Fundo para estética */
-        border: 3px saddlebrown solid;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-
-      .headers-containers{
-        border: 3px solid rgb(0, 241, 88);
-        display: flex;
-        flex-direction: row;
-        width: 100%; 
-        padding: 15px;
-        margin: 15px;
-    }
-
-    .headers-containers img {
-        width: 1.875em;
-        margin-right: 0.625em;
-    }
-    .headers-containers a {
-        text-decoration: none;
-        color: #2c2c2c;
-        font-size: 1rem;
-        font-weight: bold;
-        font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
-    }
-        
-
-    .header-container {
-        padding: 0.9375em 0; /* Espaçamento interno */
-        border: 3px solid bl; /* Apenas para visualização */
-        margin: 0; /* Remove qualquer margem extra */
-        flex-grow: 1;
-        border: 2px solid blue;
-    }
-    
-    .container-action{
-        display: none;
-        border: 9px solid rgb(255, 0, 225);
-    }
-
-    .container-action .expanded-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px; /* Espaçamento entre os elementos */
-    }
-    
-    
-        
-    .container-actions p{
-        color: black;
-    }
-
-}
-
-
-
-@media screen and (min-width:1210px) {
-    
-}
 
 /*Reservar um Voo*/
 
@@ -240,7 +156,7 @@
 .tipo-voo input[type="radio"],
 .tipo-dados input[type="radio"],
 .por-tipo-voo input[type="radio"]  {
-    display: none; /* Manter ocultos, mas deixá-los acessíveis para interatividade */
+    display: none; 
 }
 
 .tipo-voo label{
@@ -295,7 +211,7 @@
     height: 1.5625em;
     margin: 0.3125em;
     background-color: #ffffff;
-    border: 0.125em solid #d0d0d0; /* Borda mais fina e clara */
+    border: 0.125em solid #d0d0d0; 
     border-radius: 0.25em;
     transition: border-color 0.3s ease;
 }
@@ -373,7 +289,7 @@
     color: #333333;
     font-weight: bold;
     border-radius: 0.25em;
-    flex-grow: 1; /* Faz com que a label ocupe o restante do espaço disponível */
+    flex-grow: 1; 
     white-space: nowrap; 
 }
 
@@ -398,7 +314,7 @@
     .container-viagem-origem,
     .container-viagem-destino,
     .container-viagem-data {
-        flex-grow: 1; /* Os contêineres internos irão ocupar o máximo de espaço */
+        flex-grow: 1; 
     }
 
     .container-viagem-data{
@@ -424,12 +340,12 @@
     font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.875rem;
-    border: none; /* Remove as bordas padrão */
-    border-bottom: 0.125em solid #127045; /* Adiciona borda apenas na parte inferior */
+    border: none; 
+    border-bottom: 0.125em solid #127045; 
     border-radius: 0.3125em;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para fundo e cor */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .button-add-TAP button:hover {
@@ -462,8 +378,8 @@
 .container-login button,
 .container-reserva button {
     display: block;          
-    margin-left: auto;       /* Centraliza o botão à esquerda */
-    margin-right: auto;      /* Centraliza o botão à direita */
+    margin-left: auto;       
+    margin-right: auto;      
     width: 95%;              
     padding: 0.9375em 1.25em;     
     background-color: #72be44;
@@ -474,7 +390,7 @@
     border: none;
     border-radius: 0.3125em;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transição suave para fundo e cor */
+    transition: background-color 0.3s ease; 
 }
 
 .container-login button:hover,
@@ -486,22 +402,22 @@
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%; /* Ajusta à largura do container */
-    margin: 1.25em 0; /* Espaçamento acima e abaixo */
+    width: 100%; 
+    margin: 1.25em 0; 
 }
 
 .divisor::before,
 .divisor::after {
     content: '';
-    flex: 1; /* Faz as linhas ocuparem o espaço disponível */
-    border-bottom: 0.0625em solid #ccc; /* Linha cinza */
-    margin: 0 0.625em; /* Espaçamento entre a linha e o texto */
+    flex: 1; 
+    border-bottom: 0.0625em solid #ccc; 
+    margin: 0 0.625em; 
 }
 
 .divisor span {
     font-family: Arial, sans-serif;
     font-size: 0.875rem;
-    color: #666; /* Cor do texto */
+    color: #666; 
 }
 
 .container-text{
@@ -595,8 +511,8 @@
       
     } 
     .container-links .link .img-link {
-        width: 2.00em; /* Aumenta o tamanho da imagem */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 2.00em; 
+        height: auto; 
     }
 }
 
@@ -625,7 +541,6 @@
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    transition: 0.3s ease;
 }
 
 .container-tipo-voo img,
@@ -662,11 +577,12 @@
 
 .selecionar-data {
     display: flex;
-    flex-direction: column; /* Coloca os elementos em coluna */
+    flex-direction: column; 
     width: 100%;
 }
 
-#data-voo {
+#data-voo,
+#data-voo-pc {
     font-size: 0.9375em;
     margin-top: 0.3125em;
     outline: none;
@@ -705,8 +621,8 @@
     .container-estado-voo{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que os itens "quebrem" para a linha seguinte */
-        justify-content: space-between; /* Espaça os itens igualmente */    
+        flex-wrap: wrap;
+        justify-content: space-between;   
     }
 
     .container-tipo-voo,
@@ -715,9 +631,11 @@
         flex-basis: 48%; /* Cada contêiner ocupa 48% da largura disponível, permitindo 2 itens por linha */
         margin: 0.375em 0; /* Ajusta a margem para não haver grande espaço entre os itens */
     }
-    #prosseguir-btn{
+    #prosseguir-btn,
+    #prosseguir-btn-pc{
         margin-top: 3em;
     }
+
     .resultado {
         margin-top: 1.25em;
         padding: 0.9375em;
@@ -730,8 +648,9 @@
 
 
 /* Inicialmente, o resultado dos voos está escondido */
-#resultado-voo {
-    display: none; /* Esconde o conteúdo até o botão 'Prosseguir' ser clicado */
+#resultado-voo,
+#resultado-voo-pc {
+    display: none; 
 }
 
 .resultado {
@@ -743,8 +662,8 @@
 }
 .voos-container {
     display: flex;
-    flex-direction: column; /* Alinha os itens em uma única coluna */
-    gap: 1.25em; /* Espaçamento vertical entre os voos */
+    flex-direction: column; 
+    gap: 1.25em; 
     margin-top: 0.9375em;
 }
 
@@ -919,14 +838,14 @@ h2 {
 .tipo-voo,
 .tipo-dados,
 .por-tipo-voo {
-    justify-content: flex-start; /* Alinha os items à esquerda */
+    justify-content: flex-start; 
 }
 
 .tipo-voo label,
 .tipo-dados label,
 .por-tipo-voo label {
-    text-align: left; /* Alinha o texto dentro do label à esquerda */
-    padding: 0.3125em 0.625em; /* Ajusta o padding para alinhar o label corretamente */
+    text-align: left; 
+    padding: 0.3125em 0.625em; 
 }
 }
 
@@ -937,14 +856,14 @@ h2 {
 .tipo-voo,
 .tipo-dados,
 .por-tipo-voo  {
-    justify-content: flex-start; /* Alinha os items à esquerda */
+    justify-content: flex-start; 
 }
 
 .tipo-voo label,
 .tipo-dados label,
 .por-tipo-voo label {
-    text-align: left; /* Alinha o texto dentro do label à esquerda */
-    padding: 0.3125em 1.25em; /* Ajusta o padding para alinhar o label corretamente */
+    text-align: left; 
+    padding: 0.3125em 1.25em; /
 }
     
 

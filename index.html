@@ -859,6 +859,7 @@
         </div>
 
           
+          
         <!-- Novo container abaixo do slider - PC -->
         <div class="container-pc">
             <div class="container-actions">
@@ -873,13 +874,17 @@
                             <img src="container-actions/img/bilhete.svg">
                             <a>As minhas viagens</a>
                         </div>
+                        <div class="header-container" id="check-in-header">
+                            <img src="container-actions\img\check-in.svg">
+                            <a>Check-in</a>
+                        </div>
                         <div class="header-container" id="estado-voo-header">
                             <img src="container-actions\img\plane.svg" >
                             <a>Estado do voo</a>
                         </div>
                     </div>
                     <!--container-action-pc-->
-                    <div class="container-action" id="reserva-voo-container" style="display: none;">
+                    <div class="container-action-pc" id="reserva-voo-container">
                         <!-- Elementos adicionais escondidos inicialmente -->
                         <div class="expanded-content">
                             <div class="tipo-e-checkbox">
@@ -933,7 +938,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-action">
+                    <div class="container-action-pc" id="minhas-viagens-container">
                         <!-- Elementos adicionais escondidos inicialmente -->
                         <div class="expanded-content">
                             <div class="container-viagens">
@@ -984,21 +989,55 @@
                             </div>              
                         </div>
                     </div>
-                    <div class="container-action-pc" id="estado-voo-container" style="display: none;">
+                    <div class="container-action-pc" id="check-in-container">
+                        <div class="expanded-content">
+                            <div class="container-viagens">
+                                <div class="container-login">
+                                        <h1>Login</h1>
+                                        <div class="container-p">
+                                            <p>Para visualizar a lista dos seus voos para check-in.</p>
+                                        </div>
+                                    <button>Login</button>
+                                </div>
+                                <div class="divisor">
+                                    <span>OU</span>
+                                </div>           
+                                <div class="container-reserva">
+                                    <h1>Insira os dados relativos à sua reserva</h1>
+                                    <div class="tipo-dados">
+                                        <div>
+                                            <input type="radio" id="referencia-reserva" name="tipo-dados" checked>
+                                            <label for="referencia-reserva">Referência da reserva</label>
+                                        </div>
+                                        <div>
+                                        <input type="radio" id="numero-tap" name="tipo-dados">
+                                            <label for="numero-tap">Número TAP Miles&Go</label>
+                                        </div>
+                                    </div>    
+                                    <div class="container-text">
+                                        <input type="text"  placeholder="Número da referência" >                                                 
+                                        <input type="text" placeholder="Apelido">
+                                    </div>
+                                    <button>Prosseguir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-action-pc" id="estado-voo-container" >
                         
                         <!-- Elementos adicionais escondidos inicialmente -->
                         <div class="expanded-content">
                             <div class="por-tipo-voo">
                                 <div>
-                                    <input type="radio" id="por-aeroporto-2" name="tipo-voo" checked>
+                                    <input type="radio"  name="tipo-voo" checked>
                                     <label for="por-aeroporto">Por aeroporto</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="por-origem-destino-2" name="tipo-voo">
+                                    <input type="radio" name="tipo-voo">
                                     <label for="por-origem-destino">Por origem e destino</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="por-voo-2" name="tipo-voo">
+                                    <input type="radio" name="tipo-voo">
                                     <label for="por-voo">Por voo</label>
                                 </div>
                             </div>
@@ -1008,7 +1047,7 @@
                                     <img src="container-actions\img\plane-estado.svg">
                                     <div class="selecionar-tipo-voo">
                                         <label for="tipo-voo">Tipo de Vôo</label>
-                                        <select id="tipo-voo-2" class="tipo-voo-select" required>
+                                        <select id="tipo-voo-pc" class="tipo-voo-select" required>
                                             <option value="ida">Voo de ida</option>
                                             <option value="regresso">Voo de regresso</option>
                                         </select>
@@ -1020,14 +1059,14 @@
                                     <img src="container-actions\img\calendar-days-fundo-branco.svg">
                                     <div class="selecionar-data">
                                         <label for="data-voo" class="destino-texto">Selecionar Datas</label>
-                                        <input type="date" id="data-voo-2" required>
+                                        <input type="date" id="data-voo-pc" required>
                                     </div>
                                 </div>
                             
                                 <!-- Cidade de Partida/Regresso -->
                                 <div class="container-cidade">
                                     <label for="data-voo" class="destino-texto">De onde?</label>
-                                    <input type="text" id="cidade-2" placeholder="Lisboa" required>
+                                    <input type="text" id="cidade-pc" placeholder="Lisboa" required>
                                 </div>
                             
                                 <!-- Botão de Prosseguir -->
@@ -1036,29 +1075,29 @@
                                 </div>
                             </div>
                             <!-- Resultado do Voo -->
-                            <div id="resultado-voo-2" class="resultado" style="display: none;">
+                            <div id="resultado-voo-pc" class="resultado" style="display: none;">
                                 <h2>Informações do Voo</h2>
                                 <div class="voos-container">
                                     <!-- Informações do Voo 1 -->
                                     <div class="voo">
                                         <h3>Voo 1</h3>
-                                        <p>Número de Voo: <span id="numero-voo1-2"></span></p>
-                                        <p>Dia do Voo: <span id="dia-voo1-2"></span></p>
-                                        <p>Hora do Voo: <span id="hora-voo1-2"></span></p>
-                                        <p>Estado do Voo: <span id="estado-voo1-2"></span></p>
+                                        <p>Número de Voo: <span id="numero-voo1-pc"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo1-pc"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo1-pc"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo1-pc"></span></p>
                                     </div>
                                 
                                     <!-- Informações do Voo 2 -->
                                     <div class="voo">
                                         <h3>Voo 2</h3>
-                                        <p>Número de Voo: <span id="numero-voo2-2"></span></p>
-                                        <p>Dia do Voo: <span id="dia-voo2-2"></span></p>
-                                        <p>Hora do Voo: <span id="hora-voo2-2"></span></p>
-                                        <p>Estado do Voo: <span id="estado-voo2-2"></span></p>
+                                        <p>Número de Voo: <span id="numero-voo2-pc"></span></p>
+                                        <p>Dia do Voo: <span id="dia-voo2-pc"></span></p>
+                                        <p>Hora do Voo: <span id="hora-voo2-pc"></span></p>
+                                        <p>Estado do Voo: <span id="estado-voo2-pc"></span></p>
                                     </div>
                                     <div class="voo-cidade">
                                         <p>Cidade de Partida/Regresso:</p>
-                                        <span id="cidade-voo-2"></span>  
+                                        <span id="cidade-voo-pc"></span>  
                                     </div>                      
                                 </div>                     
                             </div>
@@ -1094,159 +1133,14 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Links e Recursos TAP</title>
             <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    line-height: 1.6;
-                    padding: 20px;
-                    margin: 0;
-                }
-        
-                /* Container para as seções */
-                .container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                }
-        
-                /* Cada seção */
-                .section {
-                    flex: 1 1 30%; /* 30% da largura disponível */
-                    min-width: 250px; /* Largura mínima em telas pequenas */
-                    padding: 15px;
-                    border: 1px solid #ddd;
-                    border-radius: 5px;
-                    background-color: #f9f9f9;
-                }
-        
-                .section h2 {
-                    font-size: 1.3em;
-                    margin-bottom: 10px;
-                }
-        
-                .list {
-                    list-style-type: none;
-                    padding-left: 0;
-                }
-        
-                .list li {
-                    margin: 8px 0;
-                }
-        
-                .list li a {
-                    text-decoration: none; /* Remove o sublinhado por padrão */
-                    color: #000; /* Cor preta para os links */
-                }
-        
-                .list li a:hover {
-                    text-decoration: underline; /* Sublinha os links quando o mouse passa sobre eles */
-                }
-        
-                button {
-                    background-color: #007bff;
-                    color: white;
-                    border: none;
-                    padding: 10px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-        
-                button:hover {
-                    background-color: #0056b3;
-                }
+             
             </style>
       
            <meta charset="UTF-8">
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
            <title>Links e Recursos TAP</title>
            <style>
-               body {
-                   font-family: Arial, sans-serif;
-                   line-height: 1.6;
-                   padding: 20px;
-                   margin: 0;
-               }
-       
-               /* Container principal */
-               .container {
-                   display: flex;
-                   flex-wrap: wrap;
-                   gap: 20px;
-                   justify-content: space-between;
-               }
-       
-               /* Seções */
-               .section {
-                   flex: 1 1 18%; /* Cada seção ocupa 18% da largura */
-                   min-width: 250px;
-                   padding: 15px;
-                   background-color: transparent; /* Sem fundo */
-                   border: none; /* Sem borda */
-               }
-       
-               /* Título das seções */
-               .section h2 {
-                   font-size: 1.3em;
-                   margin-bottom: 10px;
-                   color: #333;
-               }
-       
-               /* Lista de links */
-               .list {
-                   list-style-type: none;
-                   padding-left: 0;
-               }
-       
-               .list li {
-                   margin: 8px 0;
-               }
-       
-               .list li a {
-                   text-decoration: none;
-                   color: #000;
-                   transition: color 0.3s ease; /* Sem sublinhado no hover */
-               }
-       
-               /* Cor do texto quando o mouse passa sobre o link (sem sublinhado) */
-               .list li a:hover {
-                   color: #555;
-               }
-       
-               /* Link "Definições de cookies" sempre verde e sublinhado */
-               .list li a.green {
-                   color: green; /* Cor verde */
-                   text-decoration: underline; /* Sempre sublinhado */
-               }
-       
-               /* Estilo do botão "Registe-se" */
-               button {
-                   background: none; /* Sem fundo */
-                   color: green; /* Cor verde */
-                   border: none; /* Sem borda */
-                   padding: 10px;
-                   cursor: pointer;
-                   font-size: 16px;
-                   transition: color 0.3s ease;
-               }
-       
-               /* Estilo do botão ao passar o mouse */
-               button:hover {
-                   color: green; /* Mantém a cor verde */
-                   text-decoration: underline; /* Sublinha o texto */
-               }
-       
-               /* Estilo da coluna de imagens */
-               .images-column img {
-                   width: 100%;
-                   height: auto;
-                   margin-top: 20px;
-               }
-       
-               /* Responsividade: Ajuste para telas menores */
-               @media (max-width: 768px) {
-                   .section {
-                       flex: 1 1 100%; /* As seções ocupam 100% da largura em telas pequenas */
-                   }
-               }
+              
            </style>
        </head>
        <body>
