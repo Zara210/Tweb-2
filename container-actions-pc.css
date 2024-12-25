@@ -1,6 +1,7 @@
 @media screen and (min-width: 1024px) {
     .container-pc {
         display: flex;
+        z-index: 4;
     }
 
     .container-resto {
@@ -10,10 +11,11 @@
     .container-actions {
         width: 94vw;
         position: absolute;
-        top: 330px;
+        top: 370px;
         left: 50%;
         transform: translateX(-51%);
         display: flex;
+        max-width: 1200px;
     }
 
     .container-actions-2 {
@@ -108,7 +110,29 @@
         align-items: center;
         justify-content: center;
     }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;  
+        background-color: white;
+        width: 100%;
+        margin-top: 1em;
+      }
     
+      .footer-container-actions{
+        margin: 0;
+      }
+
+
+
+    .footer-container-action a img,
+    .footer-container-action-900px a img{
+        width: 2.875em;
+        
+    }
+
 }
 
 

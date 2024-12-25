@@ -1,0 +1,41 @@
+.header-slider-ofertas {
+ 
+}
+
+.header-slider-ofertas h1 {
+    font-family: 'Montserrat', "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.59em;
+    font-weight: bold;
+    padding: 0 0.3125em ;
+}
+
+/* Estilização do select */
+.oferta {
+    font-size: 1.625em;
+    padding: 0.3125em;
+    border: none;
+    outline: none;
+    color: #127045; 
+    font-weight: bold;
+    text-decoration: underline; 
+    cursor: pointer;
+    width: auto; /* Permite que o tamanho seja ajustado */
+   
+}
+
+/* Opcional: estilo ao abrir o dropdown */
+.oferta option {
+    color: black; /* Cor dos itens no dropdown */
+    text-decoration: none; /* Remove sublinhado nos itens */
+    font-size: 1rem;
+    font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
+}
+
+.slider-ofertas {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    overflow: hidden;  /* Esconde as imagens fora da área visível */
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}

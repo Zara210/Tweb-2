@@ -751,7 +751,8 @@ h2 {
 }
 
 
-.footer-container-action:not(:last-child)::after {
+.footer-container-action:not(:last-child)::after,
+.footer-container-action-900px:not(:last-child)::after  {
     content: "";
     position: absolute;
     top: 0;
