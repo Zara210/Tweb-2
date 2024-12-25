@@ -648,10 +648,10 @@
 
 
 /* Inicialmente, o resultado dos voos está escondido */
-#resultado-voo,
-#resultado-voo-pc {
+#resultado-voo {
     display: none; 
 }
+
 
 .resultado {
     margin-top: 1.25em;

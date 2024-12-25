@@ -9,7 +9,7 @@ const checkInContainer = document.getElementById("check-in-container");
 const estadoVooHeader = document.getElementById("estado-voo-header");
 const estadoVooContainer = document.getElementById("estado-voo-container");
 const resultadoVooDiv = document.getElementById("resultado-voo-pc");
-
+const fecharModalBtn = document.getElementById("fechar-resultado");
 
 
 // Abertura automática do container "Reserva de voo" ao carregar a página
@@ -140,4 +140,12 @@ document.getElementById('prosseguir-btn-pc').addEventListener('click', function 
     document.getElementById('estado-voo2-pc').textContent = voo2.estado;
 
     document.getElementById('cidade-voo-pc').textContent = cidade;
+
+        // Fechar o modal
+    fecharModalBtn.addEventListener("click", () => {
+        console.log("clicado fecahr")
+        resultadoVooDiv.style.display = "none";
+
+    });
+
 });

@@ -7,10 +7,14 @@
     font-size: 1.59em;
     font-weight: bold;
     padding: 0 0.3125em ;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    color: #2c2c2c;
 }
 
 /* Estilização do select */
 .oferta {
+    margin-left: 0.5em;
     font-size: 1.625em;
     padding: 0.3125em;
     border: none;
@@ -20,7 +24,7 @@
     text-decoration: underline; 
     cursor: pointer;
     width: auto; /* Permite que o tamanho seja ajustado */
-   
+  
 }
 
 /* Opcional: estilo ao abrir o dropdown */
@@ -38,4 +42,13 @@
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
+}
+
+
+@media screen and (min-width:1023px) {
+    .header-slider-ofertas h1 {
+        margin-top: 15em;
+        margin-left: 1em;
+    }
+    
 }

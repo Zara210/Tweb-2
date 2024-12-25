@@ -111,6 +111,43 @@
         justify-content: center;
     }
 
+    .resultado-conteudo {
+        position: absolute;
+        background-color: white;
+        top: 50%; /* Ajuste para definir a posição mais acima */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Garante que o centro do modal esteja no centro da tela */
+        padding: 20px;
+        border-radius: 8px;
+        width: 60%; /* Largura do modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 5;
+        border: 1px solid #ededed;
+    }
+
+    .resultado-conteudo h2{
+        color: #72be44;
+    }
+    
+
+    /* Botão para fechar o modal */
+    .fechar {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .fechar:hover,
+    .fechar:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        
+
     .footer-container {
         display: flex;
         flex-direction: row;
