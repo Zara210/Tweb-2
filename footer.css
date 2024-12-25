@@ -1,0 +1,20 @@
+/* Estilo geral para o footer */
+footer {
+    display: flex; /* Usamos flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaçamento máximo entre os itens */
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px 0; /* Padding acima e abaixo do footer */
+    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+}
+
+/* Adiciona margens específicas para o texto e a imagem */
+footer p {
+    margin-left: 40px; /* 40px de margem da esquerda */
+    margin: 0; /* Remove margens extras */
+}
+
+footer img.footer-img {
+    max-height: 40px; /* Limita a altura da imagem */
+    width: auto; /* Mantém a proporção da imagem */
+    margin-right: 40px; /* 40px de margem da direita */
+}
