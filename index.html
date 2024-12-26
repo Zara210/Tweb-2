@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste-FlyTap</title>
 
-    <!--CSS -->
+   
     <link rel="stylesheet" href="main_css.css">  
     <link rel="stylesheet" href="menu\menu_css.css">  
     <link rel="stylesheet" href="login.css">  
@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="container-actions.css">
     <link rel="stylesheet" href="container-actions-pc.css">
     <link rel="stylesheet" href="slider-ofertas\slider-ofertas.css">
+    <link rel="stylesheet" href="footer.css">
 
-    <!--Fontes-->
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -24,11 +25,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     
+
+
     <script src="menu\menu_js.js" defer></script>  
     <script src="slider\slider.js" defer></script>  
     <script src="main.js"></script>
     <script src="container-actions\container-actions_js.js" defer ></script>
     <script src="container-actions\container-js-pc.js" defer ></script>
+    <script src="slider-ofertas\slider-ofertas.js" defer></script>
+
+
 </head>
 <body>
     <div class="alerta-banner">
@@ -37,7 +43,6 @@
         <img src="img\right-arrow-previous-svgrepo-com.svg" class="seta-img">
         <p class="descricao">Estado de catastro na região na de Valencia</p>
         <a href="#VerTudo">Ver Tudo</a>
-
     </div>
     
     <div class="custom-nav-bar">
@@ -61,7 +66,7 @@
         <img src="img\TAPLogo1024.svg" class="logo_min"> 
 
 
-          <!-- Seção adicionada entre o logo e os botões PC -->
+         
         <div class="nav-links">
             <ul class="nav-links-list">
                 <li class="nav-link-item has-dropdown">
@@ -1153,51 +1158,42 @@
             </div>
         </div>
        
-        
-    <!-- Resultado do Voo -->
-    <div id="resultado-voo-pc" class="resultado" style="display: none;">
-        <div class="resultado-conteudo">
-            <span class="fechar" id="fechar-resultado">&times;</span>
-            <h2>Informações do Voo</h2>
-            <div class="voos-container">
-                <!-- Informações do Voo 1 -->
-                <div class="voo">
-                    <h3>Voo 1</h3>
-                    <p>Número de Voo: <span id="numero-voo1-pc"></span></p>
-                    <p>Dia do Voo: <span id="dia-voo1-pc"></span></p>
-                    <p>Hora do Voo: <span id="hora-voo1-pc"></span></p>
-                    <p>Estado do Voo: <span id="estado-voo1-pc"></span></p>
-                </div>
-            
-                <!-- Informações do Voo 2 -->
-                <div class="voo">
-                    <h3>Voo 2</h3>
-                    <p>Número de Voo: <span id="numero-voo2-pc"></span></p>
-                    <p>Dia do Voo: <span id="dia-voo2-pc"></span></p>
-                    <p>Hora do Voo: <span id="hora-voo2-pc"></span></p>
-                    <p>Estado do Voo: <span id="estado-voo2-pc"></span></p>
-                </div>
-                <div class="voo-cidade">
-                    <p>Cidade de Partida/Regresso:</p>
-                    <span id="cidade-voo-pc"></span>  
-                </div>                      
-            </div> 
-        </div>                    
-    </div>
-
-
-
-
-
-
       
+        <!-- Resultado do Voo -->
+        <div id="resultado-voo-pc" class="resultado" style="display: none;">
+            <div class="resultado-conteudo">
+                <span class="fechar" id="fechar-resultado">&times;</span>
+                <h2>Informações do Voo</h2>
+                <div class="voos-container">
+                    <!-- Informações do Voo 1 -->
+                    <div class="voo">
+                        <h3>Voo 1</h3>
+                        <p>Número de Voo: <span id="numero-voo1-pc"></span></p>
+                        <p>Dia do Voo: <span id="dia-voo1-pc"></span></p>
+                        <p>Hora do Voo: <span id="hora-voo1-pc"></span></p>
+                        <p>Estado do Voo: <span id="estado-voo1-pc"></span></p>
+                    </div>
+                
+                    <!-- Informações do Voo 2 -->
+                    <div class="voo">
+                        <h3>Voo 2</h3>
+                        <p>Número de Voo: <span id="numero-voo2-pc"></span></p>
+                        <p>Dia do Voo: <span id="dia-voo2-pc"></span></p>
+                        <p>Hora do Voo: <span id="hora-voo2-pc"></span></p>
+                        <p>Estado do Voo: <span id="estado-voo2-pc"></span></p>
+                    </div>
+                    <div class="voo-cidade">
+                        <p>Cidade de Partida/Regresso:</p>
+                        <span id="cidade-voo-pc"></span>  
+                    </div>                      
+                </div> 
+            </div>                    
+        </div>
 
-        <p>1</p><br>
-        <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br> <p>1</p><br>    
-        <p>1</p><br> <p>1</p><br> 
+
         <div class="header-slider-ofertas">
             <h1>As melhores ofertas de voos a partir de </h1>
-            <select class="oferta" >
+            <select class="oferta-select" >
                 <option >Lisboa</option>
                 <option >Terceira</option>
                 <option >Faro</option>
@@ -1208,28 +1204,96 @@
             </select>
         </div>
         
-
-
+        
         <div class="slider-ofertas">
             <div class="slider-wrapper-ofertas">
                 <div class="slide-ofertas">
-                    <img src="slider/img/LAL.jpg">
-                    <div class="texto">Abrece a nova rota: Lisboa-Los Angeles</div>
-                    <div class="subtitulo">A partir de maio 2025, Lisboa-Los Angeles com 4 voos diretos semanais.</div>
+                    <img src="slider-ofertas\img\praia-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    <div class="slider-conteudo-ofertas">
+                        <div class="oferta-slider">
+                            <div class="texto-oferta">Praia</div>
+                            <div class="subtitulo-oferta">Ida e volta</div>
+                        </div>
+                        <div class="preco-oferta">
+                            <div class="texto-preco">Desde</div>
+                            <div class="preco-oferta">289€</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide-ofertas">
-                    <img src="slider/img/BOS.jpg">
-                    <div class="texto">Abrece a nova rota: Porto-Boston</div>
-                    <div class="subtitulo">A partir de maio 2025, Porto-Boston com 4 voos diretos semanais.</div>
+                    <img src="slider-ofertas\img\fortaleza-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    <div class="slider-conteudo-ofertas">
+                        <div class="oferta-slider">
+                            <div class="texto-oferta">Fortaleza</div>
+                            <div class="subtitulo-oferta">Ida e volta</div>
+                        </div>
+                        <div class="preco-oferta">
+                            <div class="texto-preco">Desde</div>
+                            <div class="preco-oferta">619€</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide-ofertas">
-                    <img src="slider/img/SanF.jpg">
-                    <div class="texto">Abrece a nova rota: Terceira-São Francisco</div>
-                    <div class="subtitulo">A partir de maio 2025, Terceira-São Francisco com 1 voos semanal.</div>
+                    <img src="slider-ofertas\img\terceira-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    <div class="slider-conteudo-ofertas">
+                        <div class="oferta-slider">
+                            <div class="texto-oferta">Terceira</div>
+                            <div class="subtitulo-oferta">Ida e volta</div>
+                        </div>
+                        <div class="preco-oferta">
+                            <div class="texto-preco">Desde</div>
+                            <div class="preco-oferta">78€</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
-       
+
+
+        <div class="ofertas-pc">
+            <div class="slide-ofertas">
+                <img src="slider-ofertas\img\praia-banner-newhomepage-v2-desktop-1920x500.jpg">
+                <div class="slider-conteudo-ofertas">
+                    <div class="oferta-slider">
+                        <div class="texto-oferta">Praia</div>
+                        <div class="subtitulo-oferta">Ida e volta</div>
+                    </div>
+                    <div class="preco-oferta">
+                        <div class="texto-preco">Desde</div>
+                        <div class="preco-oferta">289€</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-ofertas">
+                <img src="slider-ofertas\img\fortaleza-banner-newhomepage-v2-desktop-1920x500.jpg">
+                <div class="slider-conteudo-ofertas">
+                    <div class="oferta-slider">
+                        <div class="texto-oferta">Fortaleza</div>
+                        <div class="subtitulo-oferta">Ida e volta</div>
+                    </div>
+                    <div class="preco-oferta">
+                        <div class="texto-preco">Desde</div>
+                        <div class="preco-oferta">619€</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-ofertas">
+                <img src="slider-ofertas\img\terceira-banner-newhomepage-v2-desktop-1920x500.jpg">
+                <div class="slider-conteudo-ofertas">
+                    <div class="oferta-slider">
+                        <div class="texto-oferta">Terceira</div>
+                        <div class="subtitulo-oferta">Ida e volta</div>
+                    </div>
+                    <div class="preco-oferta">
+                        <div class="texto-preco">Desde</div>
+                        <div class="preco-oferta">78€</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
  
 
         <p>1</p><br>
