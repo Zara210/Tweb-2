@@ -1,0 +1,157 @@
+.sugestoes-pc{
+    display: none;
+}
+
+.header-slider-sugestao{
+    color: #2c2c2c;
+    font-family: 'Montserrat', "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 1em 1em;
+}
+
+.slider-sugestao {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    overflow: hidden;  /* Esconde as imagens fora da área visível */
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.slider-wrapper-sugestao {
+    display: flex; /* Flexbox para alinhar as imagens horizontalmente */
+    transition: transform 0.3s ease;
+    width: 300%; /* Garantir que o container ocupe 3 vezes a largura do slider (com 3 slides) */
+}
+
+.slide-sugestao {
+    width: 100%; /* Cada slide ocupa 100% da largura do slider */
+    height: 300px; 
+    position: relative; /* Para permitir posicionamento do texto */
+}
+
+.slide-sugestao img {
+    height: 100%; 
+    width: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    filter: brightness(60%); 
+}
+
+/* Ajuste para o conteúdo do slider */
+.slider-conteudo-sugestao {
+    position: absolute;
+    top: 160px; 
+    left: 0;
+    width: 100%; 
+    z-index: 2;
+    padding-left: 20px;
+    color: white;
+    font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.slider-conteudo-sugestao h1,
+.conteudo-sugestao h1  {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.slider-conteudo-sugestao p,
+.conteudo-sugestao p  {
+    font-size: 1rem; 
+    margin: 10px 0; 
+}
+
+.slider-conteudo-sugestao a,
+.conteudo-sugestao a   {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 10px; 
+    color: #fff; 
+   
+}
+
+.slider-conteudo-sugestao a:hover,
+.conteudo-sugestao a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .header-slider-sugestao{
+        color: #2c2c2c;
+        font-family: 'Montserrat', "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 1em;
+    }
+
+    .slide-sugestao,
+    .indicadores-sugestao{
+        display: none;
+    }
+    
+    .sugestoes-pc { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 10px; 
+        margin: 1em auto;
+        width: 100%;
+        max-width: 1220px;
+    }
+    
+    .sugestao {
+        position: relative; /* Necessário para posicionar o conteúdo sobre a imagem */
+        background: #f5f5f5;
+        border-radius: 8px;
+        overflow: hidden;
+        min-height: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 1em;
+    }
+    
+    .sugestao img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(70%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sugestao:hover img {
+        transform: scale(1.1); 
+    }
+
+    /* Posiciona o conteúdo sobre a imagem */
+    .conteudo-sugestao {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white; 
+        padding: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+   
+    .sugestao.grande {
+        grid-column: span 2; 
+    }
+    
+    
+}
+
+@media screen and (min-width:1224px) {
+    .header-slider-sugestao{
+        margin: 1em auto;
+        width: 100%;
+        max-width: 1220px;
+    }
+}

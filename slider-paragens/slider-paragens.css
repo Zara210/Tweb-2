@@ -169,11 +169,10 @@
 }
 
 .indicadores-paragens {
-    bottom: 25px;
-    left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1em ;
     gap: 12px;
 }
 
