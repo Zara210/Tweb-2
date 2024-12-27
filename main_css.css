@@ -216,7 +216,6 @@ nav {
         font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
         font-size: 0.875rem;
         font-weight: 500;
-        padding: 0.5em; 
         display: flex;
         align-items: center; 
     }
@@ -246,9 +245,6 @@ nav {
     }
 
 
-
-   
-    
     nav {
         position: fixed;
         padding: 0 1.25em;
