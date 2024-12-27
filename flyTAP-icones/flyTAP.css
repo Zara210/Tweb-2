@@ -15,10 +15,23 @@ p.flyTAP{
 
 .flyTAP-icones img {
     width: 100%;
-    max-width: 60px;
-    margin: 0.2em 2.5em;
+    max-width: 50px;
+    margin: 0.2em 2em;
+    transition: filter 0.3s ease;
+    cursor: pointer;
 }
 
+.flyTAP-icones-2 img {
+    width: 100%;
+    max-width: 100px;
+    margin: 0.2em 1.4em;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.flyTAP-icones img:hover {
+    filter: brightness(0.6); 
+}
 
 @media screen and (min-width: 1220px) {
     .flyTAP-icones,
