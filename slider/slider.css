@@ -28,7 +28,7 @@
     width: 100%;
     object-fit: cover; 
     object-position: center; 
-    filter: brightness(40%); 
+    filter: brightness(30%); 
 }
 
 /* Ajuste para o conteúdo do slider */
