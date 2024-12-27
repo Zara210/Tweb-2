@@ -1,4 +1,3 @@
-/* Reset básico */
 *,
 *::before,
 *::after {
@@ -7,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Botão de menu */
 .menu-btn,
 .close-btn img {
     width: 40px;
@@ -26,7 +24,6 @@
     margin-left: 10px;
 }
 
-/* Barra de rolagem personalizada */
 .menu-container::-webkit-scrollbar {
     width: 8px;
 }
@@ -41,7 +38,6 @@
     background: #f0f0f0;
 }
 
-/* Estilos gerais para o menu */
 .menu-container {
     position: absolute;
     top: 60px;
@@ -58,23 +54,20 @@
     scroll-behavior: smooth;
 }
 
-/* Torna toda a área do item de menu clicável */
 .menu-item {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     padding: 12px;
     cursor: pointer;
-    align-items: center; /* Alinha os itens na vertical */
+    align-items: center;
 }
 
-/* Ajustes no link */
 .menu-item a {
     color: #2c2c2c;
     font-size: 16px;
     font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    line-height: 24px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -83,35 +76,30 @@
     padding: 5px;
 }
 
-/* Borda inferior apenas nos itens principais */
 .menu-list > li > .menu-item {
-    border-bottom: 1px solid #f0f0f0; /* Aplica a borda */
-    padding-bottom: 10px; /* Espaçamento opcional */
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .menu-list > li:hover {
     background-color: #f5f5f5;
 }
 
-/* Remover o efeito hover quando o item do menu estiver aberto */
 .menu-list > li.open:hover {
-    background-color: transparent; /* Remove o fundo alterado no hover */
+    background-color: transparent;
 }
 
-/* Estilo para o link de menu principal quando o submenu está aberto */
 .menu-list > li.has-submenu.open > .menu-item {
-    background-color: #f0f0f0 ; /* Muda o fundo do link principal */
+    background-color: #f0f0f0 ;
 }
 
-/* Submenus */
 .submenu {
     display: none;
     flex-direction: column;
     width: 100%;
     position: relative;
-    margin-top: 15px;
 }
 .submenu li a {
+    margin-left: 10px;
     color: #3a970e;
     font-size: 16px;
     font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
@@ -125,35 +113,30 @@
     display: flex;
 }
 
-/* Estilo da seta */
 .arrow img {
     width: 25px;
     height: auto;
 }
 
-/* Reduzindo a distância entre o submenu e o sub-submenu */
-.submenu .submenu {
-    margin-top: 0; /* Remove qualquer margem superior */
-    padding-top: 0; /* Remove qualquer preenchimento superior */
+
+
+.submenu .submenu .menu-item {
+    padding: 5px;
+    margin-left: 10px;
 }
 
-/* Estilo para os itens do submenu do submenu */
+
 .submenu .submenu .menu-item a {
-    color: #4a4a4a; /* Texto preto */
+    color: #4a4a4a;
     font-size: 14px;
-    font-weight: 400; /* Texto em negrito */
+    font-weight: 400;
     font-family:"Lato", "Lucida Grande", Tahoma, sans-serif;
-    line-height: 18px;
-    padding: 5px;
 }
 
 nav.menu-open .menu-container {
     display: flex;
 }
 
-
-
-/* Flytap */
 .flytap-box {
     display: flex;
     flex-direction: column;
@@ -177,7 +160,6 @@ nav.menu-open .menu-container {
     transition: color 0.3s ease;
 }
 
-/* Footer */
 .footer-menu {
     display: flex;
     flex-direction: column;
@@ -203,11 +185,7 @@ nav.menu-open .menu-container {
     height: 24px;
 }
 
-
-
-/* Responsividade */
 @media screen and (max-width: 768px) {
-    /* Mostrar/Esconder menu */
     nav.menu-open .nav-buttons > .nav-btn {
         display: none;
     }
@@ -218,7 +196,6 @@ nav.menu-open .menu-container {
 }
 
 @media screen and (min-width: 768px) {
-    /* Menu no lado direito */
     .menu-container {
         border-top: 2px solid #f5f5f5;
         left: auto;
@@ -230,27 +207,22 @@ nav.menu-open .menu-container {
         background-color: white;
     }
     
-    /* Os botões de pesquisa e perfil continuam visíveis */
     nav.menu-open .nav-buttons .profile-btn,
     nav.menu-open .nav-buttons .search-btn {
         display: flex;
     }
 
-    /* Ocultar o botão de menu */
     nav.menu-open .nav-buttons .menu-btn {
         display: none;
     }
 
-    /* Exibir o botão de fechar */
     nav.menu-open .nav-buttons .close-btn {
         display: flex;
     }
 }
 
 @media screen and (min-width: 1024px) {
-
     .menu-container{
         display: none;
     }
-
 }
