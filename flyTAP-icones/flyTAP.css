@@ -26,10 +26,10 @@ p.flyTAP{
     max-width: 100px;
     margin: 0.2em 1.4em;
     transition: filter 0.3s ease;
-    cursor: pointer;
 }
 
 .flyTAP-icones img:hover {
+    cursor: pointer;
     filter: brightness(0.6); 
 }
 

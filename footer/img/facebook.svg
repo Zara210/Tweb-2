@@ -1,0 +1,17 @@
+
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L29.3928 0L29.3928 29.2137L0 29.2137L0 0Z" transform="translate(0 0.00016923077)" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="icons--Social-Media--24--Pinterest-Copy-2">
+    <g id="Group-3" transform="translate(1.3333334 1.3333334)">
+      <path d="M0 0L29.3928 0L29.3928 29.2137L0 29.2137L0 0Z" transform="translate(0 0.00016923077)" id="Clip-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M14.6966 0C6.58026 0 0 6.57969 0 14.6966C0 22.0316 5.37477 28.1115 12.4007 29.2137L12.4007 18.9443L8.66856 18.9443L8.66856 14.6966L12.4007 14.6966L12.4007 11.4581C12.4007 7.77503 14.5945 5.74087 17.952 5.74087C19.5591 5.74087 21.2413 6.028 21.2413 6.028L21.2413 9.64446L19.3876 9.64446C17.5622 9.64446 16.993 10.7772 16.993 11.9392L16.993 14.6966L21.0692 14.6966L20.4177 18.9443L16.993 18.9443L16.993 29.2137C24.0189 28.1115 29.3931 22.0316 29.3931 14.6966C29.3931 6.57969 22.8134 0 14.6966 0" transform="translate(-0.00033846154 0.00016923077)" id="Fill-1" fill="#000000" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>
