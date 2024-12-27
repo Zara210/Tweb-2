@@ -1,0 +1,313 @@
+.destaques-titulo{
+    font-size: 1.2em;
+    color: #2c2c2c;
+    margin: 1em;
+    font-family: 'Montserrat', "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.destaques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 0 1em  ;
+    position: relative;
+    height: 450px;
+}
+
+.promo-header {
+    position: relative;
+}
+
+.promo-header img {
+    width: 100%;
+    height: auto;
+}
+
+.promo-header .ofertas {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background-color: #ff2837;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.promo-content {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
+}
+
+.promo-content img {
+    max-width: 150px;
+    margin-left: 0.5em;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.promo-content h1 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 15px 0;
+    text-align: start;
+}
+
+.promo-content p {
+    color: #666;
+    font-size: 1em;
+    text-align: start;
+}
+
+.promo-content p span {
+    color: #333;
+    font-weight: bold;
+}
+
+.promo-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.promo-buttons button {
+    width: 100%;              
+    padding: 0.5em 1.25em;  
+    background-color: #72be44;
+    color: #2c2c2c;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.promo-buttons button:nth-child(2) {
+    width: 100%;
+    padding: 0.625em 1.25em;
+    background-color: white;
+    color: #127045;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #127045; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.promo-buttons button:hover {
+    background-color: #9ee851;
+}
+
+.promo-buttons button:nth-child(2):hover {
+    background-color: #127045;
+    color: white;
+}
+
+.promo-pc{
+    display: none;
+}
+
+
+.cartoes-clube .cartoes {
+    border-radius: 1.5em;
+    background-color: #127045;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 1em;
+  }
+  .cartoes-clube .cartoes h1 {
+    font-size: 1.1rem;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  .cartoes-clube .cartoes a,
+  .cartoes-clube .cartoes p {
+    font-size: 1rem;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+  }
+  .cartoes-clube .cartoes a {
+    font-weight: 600;
+    cursor: pointer;
+    padding-top: 1em;
+  }
+  .cartoes-clube .cartoes a:hover {
+    text-decoration: underline;
+  }
+
+  
+.cartoes-clube .clube {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0.75em;
+    border-top: #127045 solid 0.75em;
+    margin: 1em;
+  }
+  .cartoes-clube .clube img {
+    height: 25%;
+    max-width: 8em;
+    margin-bottom: 1em;
+  }
+  .cartoes-clube .clube h1 {
+    font-size: 1.1rem;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .cartoes-clube .clube p{
+    color: #2c2c2c;
+  }
+  .cartoes-clube .clube a,
+  .cartoes-clube .clube p {
+    margin: 0.5em 0;
+    font-size: 1rem;
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+  }
+  .cartoes-clube .clube a {
+    margin: 0.75em 0;
+    font-weight: 600;
+    cursor: pointer;
+    color: #127045;
+  }
+  .cartoes-clube .clube a:hover {
+    text-decoration: underline;
+  }
+
+
+@media screen and (min-width: 768px) {
+
+    .destaques-titulo{
+        font-size: 1.8em;
+        margin: 2em;
+    }
+
+    .promo-buttons{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .promo-wrapper{
+        height: 380px;
+    } 
+
+    .promo-mobile{
+        display: none;
+    }
+
+    .promo-pc{
+        display: block;
+    }
+    
+    .promo-content .ofertas{
+        position: absolute;
+        top: 25px;
+        right: -5px;
+        background-color: #ff2837;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .destaques-titulo{
+        width: 100%;
+        max-width: 1220px;
+        margin: 1em auto;
+    }
+    .destaques{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1220px;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .promo-pc{
+        height: 100%;
+        width: 70%;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .promo-wrapper{
+        border: none;
+        height: 600px;
+        box-shadow: none;
+
+    }
+
+    .promo-header{
+        margin: 0;
+    }
+
+    .promo-header img{
+        width: 100%;
+        height: 430px;
+        content: url('img/genio-pequeno.jpg');
+        border-radius: 20px;
+    } 
+
+    .promo-content {
+        position: absolute;
+        top:51.5%;
+        left: 50%;
+        width: 90%;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
+        transform: translate(-50%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .cartoes-clube{
+        width: 30%;
+        height: 100%;
+        gap:50px
+    }
+
+   
+}
