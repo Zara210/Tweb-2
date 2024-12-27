@@ -1,0 +1,92 @@
+.restricoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c2c2c;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; 
+    border-radius: 15px; 
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 5px auto; 
+}
+
+.restricoes img {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: auto;
+    margin-bottom: 1em; /* Espaçamento abaixo da imagem */
+}
+
+.restricoes h1 {
+    font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em; /* Espaço abaixo do título */
+    width: 80%;
+
+}
+
+.restricoes p {
+    font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 1em; /* Espaço entre o parágrafo e o botão */
+}
+
+.restricoes button {
+    display: block; 
+    width: 80%; 
+    padding: 0.9375em 1.25em;
+    background-color: #72be44;
+    color: #2c2c2c;
+    font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1em auto;
+}
+
+
+.restricoes button:hover {
+    background-color: #9ee851;
+}
+
+
+/* Mídia query para telas de 768px ou menores */
+@media screen and (min-width: 768px) {
+    .restricoes {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5em;
+      gap: 0.5em;
+      padding: 1.5em;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 4px 15px rgba(0, 0, 0, 0.15);
+      max-width: 1190px;
+    }
+  
+    .restricoes img {
+      width: 9.6875em;
+      height: auto;
+      margin-right: 1em;
+    }
+  
+    .restricoes > div {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+  
+    .restricoes button {
+        width:12em ;
+        height: auto;
+        font-weight: bold;
+    }
+  }
+  
