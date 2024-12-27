@@ -18,7 +18,7 @@ body.menu-open {
     overflow: hidden;
 }
 
-.login-btn img {/*.login-btn .login-icon*/
+.login-btn img {
     width: 2.5em;
     height: 2.5em;    
 }
@@ -163,37 +163,11 @@ nav {
 }
 
 .nav-buttons .nav-btn:last-child {
-    all: unset; /* Remove todos os estilos herdados */
+    all: unset; 
     display: none;
 }
 
 
-
-.custom-nav-bar a::after,
-.nav-text::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 0.125em;
-    background-color: white;
-    border-radius: 0.3125em;
-    transition: all 0.4s ease;
-    transform: translateX(-50%);
-}
-
-.custom-nav-bar a:hover,
-.nav-text:hover {
-    color: #f5f5f5;
-}
-
-.custom-nav-bar a:hover::after,
-.nav-text:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
-}
 
 
 
@@ -228,33 +202,52 @@ nav {
         align-items: center;
         background-color: rgba(0, 0, 0, 0.1);
         padding: 0.3125em 0.3125em;
-        width: 100% ;
-        top: 3.5em; 
-        z-index: 1; 
-        position: absolute; /* Não acompanha o scroll, permanece no topo */
+        width: 100%;
+        top: 3.5em;
+        z-index: 1;
+        position: absolute;
+        gap: 1.25em; 
     }
-
-    .custom-nav-bar ul {
-        list-style: none;
-        display: flex;
-        gap: 1.25em;
-        padding: 0;
-        margin-right: 1.25em;
-    }
-
-    .custom-nav-bar li {
-        font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 0.875rem;
-        font-weight: 500;
-    }
-
+    
     .custom-nav-bar a {
         color: white;
         position: relative;
-        padding: 0;  /* Ajuste para que o pseudo-elemento tenha espaço suficiente */
-        text-decoration: none;  /* Removendo sublinhado padrão */
-        transition: color 0.3s ease;
+        text-decoration: none;
+        font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.5em; 
+        display: flex;
+        align-items: center; 
     }
+    
+    .custom-nav-bar a::after,
+    .nav-text::after  {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 0.125em;
+        background-color: white;
+        border-radius: 0.3125em;
+        transition: all 0.6s ease;
+    }
+    
+    .custom-nav-bar a:hover,
+    .nav-text:hover {
+        color: #f5f5f5;
+    }
+    
+    .custom-nav-bar a:hover::after,
+    .nav-text:hover::after  {
+        width: 100%;
+        left: 0;
+    }
+
+
+
+   
     
     nav {
         position: fixed;
@@ -302,10 +295,10 @@ nav {
     }
   
 
-    /* Links durante o scroll */
+   
     nav.navbar-scroll .nav-text,
     nav.navbar-scroll .nav-link-item a {
-        color: black; /* Alterar a cor dos links quando o navbar está com scroll */
+        color: black; 
     }
 
 
