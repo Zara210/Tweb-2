@@ -54,3 +54,18 @@ function atualizarDropdownPosition() {
         }
     });
 }
+
+
+const descriptions = document.querySelectorAll('.descricao');
+    let currentIndex = 0;
+
+    const updateDescription = (direction) => {
+        currentIndex = (currentIndex + direction + descriptions.length) % descriptions.length;
+        descriptions.forEach((desc, i) => desc.classList.toggle('active', i === currentIndex));
+    };
+
+    document.getElementById('prev').addEventListener('click', () => updateDescription(-1));
+    document.getElementById('next').addEventListener('click', () => updateDescription(1));
+
+    
+    updateDescription(0);

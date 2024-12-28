@@ -30,28 +30,27 @@
 
 .slider-ofertas {
     display: flex;
-    margin: 1em auto; /* Centraliza horizontalmente */
-    overflow: hidden; /* Esconde imagens fora do contêiner */
-    border-radius: 8px;
+    margin: 1em auto;
+    border-radius: 0.5em;
     cursor: pointer;
     user-select: none;
-    width: 100%; /* Ajuste para ocupar a largura desejada */
+    width: 100%;
     position: relative;
 }
 
 .slider-wrapper-ofertas {
-    display: flex; /* Alinha as imagens horizontalmente */
-    gap: 5px; /* Espaço entre as imagens */
-    transition: transform 0.5s ease; /* Suaviza a transição entre os slides */
+    display: flex;
+    gap: 0.3125em; 
+    transition: transform 0.5s ease; 
 }
 
 .slide-ofertas {
-    flex: 0 0 auto; /* Impede que os slides redimensionem automaticamente */
-    width: clamp(450px, 90%, 700px); /* Ajusta dinamicamente entre 300px e 600px */
-    height: clamp(150px, 22vw, 220px); /* Ajusta dinamicamente entre 150px e 200px */
+    flex: 0 0 auto;
+    width: clamp(28.125em, 90%, 46.875em);
+    height: clamp(9.375em, 22vw, 13.75em);
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5em;
   
 }
 
@@ -59,7 +58,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    border-radius: 8px;
+    border-radius: 0.5em;
     filter: brightness(90%); 
     transition: transform 0.3s ease;
 }
@@ -69,20 +68,20 @@
 }
 
 .slider-conteudo-ofertas {
-    display: flex; /* Usando Flexbox para alinhar os filhos */
-    justify-content: space-between; /* Espaço entre os elementos */
-    align-items: center; /* Alinhar verticalmente ao centro */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
     position: absolute;
-    top: 80px;
-    left: 20px;
-    width: 90%; /* Ajusta a largura */
+    top: 5em;
+    left: 1.25em;
+    width: 90%; 
     color: white;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
 }
 
 .oferta-slider {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left; 
 }
 
 .texto-oferta {
@@ -97,7 +96,7 @@
 }
 
 .preco-oferta {
-    text-align: right; /* Alinha o preço à direita */
+    text-align: right; 
     font-weight: bold;
 }
 
@@ -116,19 +115,19 @@
 
 .header-slider-ofertas {
     display: flex;
-    flex-direction: row; /* Alinha horizontalmente em telas maiores */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: flex-start; /* Alinha à esquerda */
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o elemento horizontalmente */
-    width: 100%; /* Garante que ocupe a largura total abaixo de 1200px */
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-start; 
+    max-width: 75em;
+    margin: 0 auto; 
+    width: 100%; 
     margin-bottom: 1.25em;
 }
 
 
 .header-slider-ofertas h1 {
     margin: 0; 
-    margin-left: 10px;
+    margin-left: 0.625em;
     color: #2c2c2c;
     text-align: start;
 }
@@ -143,8 +142,8 @@
     text-decoration: none;
     cursor: pointer;
     background-color: transparent;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1); 
+    border-radius: 0.3125em; 
 }
 .slider-ofertas{
     display: none;
@@ -156,16 +155,16 @@
     justify-content: center;
     margin: 0 auto; 
     width: 95%;
-    gap: 5px;
-    max-width: 1220px; 
+    gap: 0.3125em;
+    max-width: 74em; 
 }
 
 .slide-ofertas {
-    margin: 0 5px;
-    width: 175px; /* Ajusta dinamicamente entre 300px e 600px */
-    height: 170px; /* Ajusta dinamicamente entre 150px e 200px */
+    margin: 0 0.3125em;
+    width: 10.9375em;
+    height: 10.625em;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5em;
     flex-grow: 1;
 }
 

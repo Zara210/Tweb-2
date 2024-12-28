@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 1220px;
+    max-width: 75em;
     margin: 1em ;
     flex-wrap: wrap;
 }
@@ -15,7 +15,7 @@ p.flyTAP{
 
 .flyTAP-icones img {
     width: 100%;
-    max-width: 50px;
+    max-width: 3.125em;
     margin: 0.2em 2em;
     transition: filter 0.3s ease;
     cursor: pointer;

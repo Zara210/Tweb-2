@@ -11,11 +11,11 @@
     .container-actions {
         width: 94vw;
         position: absolute;
-        top: 370px;
+        top: 23.125em;
         left: 50%;
         transform: translateX(-51%);
         display: flex;
-        max-width: 1200px;
+        max-width: 74em;
     }
 
     .container-actions-2 {
@@ -52,20 +52,19 @@
         align-items: center; 
         justify-content: center; 
         background-color: white;
-        border: 1px solid #ededed;
+        border: 0.0625em solid #ededed;
     }
 
     .header-container a:hover {
         color: #127045;
     }
 
-    /* Estilos para a linha expandida */
+
     .header-container.linha {
-        background-color: #f5f5f5; /* Cor de fundo da linha quando expandida */
+        background-color: #f5f5f5; 
         font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
         font-weight: bold;
-        border: 2px solid black;
-        border-radius: 5px;
+        border-radius: 0.3125em;
     }
 
     .header-container.linha a::before {
@@ -89,7 +88,7 @@
     }
 
     .container-login {
-        border-right: 2px solid #ededed;
+        border-right: 0.125em solid #ededed;
         border-radius: 0.3125em ;
         flex: 1;
         padding: 1em;
@@ -114,15 +113,15 @@
     .resultado-conteudo {
         position: absolute;
         background-color: white;
-        top: 50%; /* Ajuste para definir a posição mais acima */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translateX(-50%); /* Garante que o centro do modal esteja no centro da tela */
-        padding: 20px;
-        border-radius: 8px;
-        width: 60%; /* Largura do modal */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        top: 50%; 
+        left: 50%;
+        transform: translateX(-50%); 
+        padding: 1.25em;
+        border-radius: 0.5em;
+        width: 60%; 
+        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
         z-index: 5;
-        border: 1px solid #ededed;
+        border: 0.0625em solid #ededed;
     }
 
     .resultado-conteudo h2{
@@ -130,11 +129,11 @@
     }
     
 
-    /* Botão para fechar o modal */
+    
     .fechar {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: bold;
         cursor: pointer;
     }

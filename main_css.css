@@ -74,6 +74,15 @@ body.menu-open .overlay {
     margin-left: 0.625em;
 }
 
+.alerta-banner .descricao {
+    display: none;
+}
+
+.alerta-banner .descricao.active {
+    display: block;
+}
+
+
 .alerta-banner a{
     margin-left: auto;
     color: inherit;
@@ -103,9 +112,11 @@ body.menu-open .overlay {
 .alerta-banner a {
     font-weight: bold;
 }
-/* Estilo para as imagens dentro do alerta-banner */
+
+
 .alerta-banner .seta-img {
    display: none;
+   cursor: pointer;
 }
 
 .custom-nav-bar {

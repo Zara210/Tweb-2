@@ -5,27 +5,27 @@ const indicadores = Array.from(document.querySelectorAll('.indicador'));
 
 let arrastando = false, inicioX = 0, posicaoAtual = 0, posicaoAnterior = 0, indiceAtual = 0;
 
-// Previne o arraste das imagens
+
 slides.forEach(slide => slide.addEventListener('dragstart', e => e.preventDefault()));
 
-// Adiciona os ouvintes de evento para interação de arraste
+
 ['mousedown', 'touchstart'].forEach(evento => slider.addEventListener(evento, iniciarArraste));
 ['mouseup', 'mouseleave', 'touchend'].forEach(evento => slider.addEventListener(evento, terminarArraste));
 ['mousemove', 'touchmove'].forEach(evento => slider.addEventListener(evento, moverArraste));
 
-// Atualiza o indicador ativo
+
 function atualizarIndicadores() {
     indicadores.forEach((indicador, indice) => indicador.classList.toggle('ativo', indice === indiceAtual));
 }
 
-// Inicia o arraste
+
 function iniciarArraste(evento) {
     arrastando = true;
     inicioX = obterPosicaoX(evento);
     slider.classList.add('arrastando');
 }
 
-// Termina o arraste e ajusta o índice do slide com base no movimento
+
 function terminarArraste() {
     if (!arrastando) return;
     arrastando = false;
@@ -34,15 +34,15 @@ function terminarArraste() {
     const movidoPor = posicaoAtual - posicaoAnterior;
 
     if (movidoPor < -100) {
-        indiceAtual = (indiceAtual + 1) % slides.length; // Próximo slide
+        indiceAtual = (indiceAtual + 1) % slides.length; 
     } else if (movidoPor > 100) {
-        indiceAtual = (indiceAtual - 1 + slides.length) % slides.length; // Slide anterior
+        indiceAtual = (indiceAtual - 1 + slides.length) % slides.length; 
     }
 
     definirPosicaoPorIndice();
 }
 
-// Move o slider de acordo com o movimento do mouse ou toque
+
 function moverArraste(evento) {
     if (!arrastando) return;
     const posicaoAtualX = obterPosicaoX(evento);
@@ -50,12 +50,12 @@ function moverArraste(evento) {
     sliderWrapper.style.transform = `translateX(${posicaoAtual}px)`;
 }
 
-// Obtém a posição X do mouse ou toque
+
 function obterPosicaoX(evento) {
     return evento.type.includes('mouse') ? evento.pageX : evento.touches[0].clientX;
 }
 
-// Define a posição do slider com base no índice atual
+
 function definirPosicaoPorIndice() {
     const larguraSlider = slider.offsetWidth;
     posicaoAtual = -indiceAtual * larguraSlider;
@@ -64,10 +64,10 @@ function definirPosicaoPorIndice() {
     atualizarIndicadores();
 }
 
-// Define a posição inicial do slider
+
 definirPosicaoPorIndice();
 
-// Adiciona os ouvintes de evento para os indicadores de slide
+
 indicadores.forEach(indicador => {
     indicador.addEventListener('click', () => {
         indiceAtual = parseInt(indicador.dataset.indice);
@@ -75,11 +75,11 @@ indicadores.forEach(indicador => {
     });
 });
 
-// Ajusta o slider ao redimensionar a janela
+
 window.addEventListener('resize', definirPosicaoPorIndice);
 
-// Troca de imagem a cada 8 segundos
+
 setInterval(() => {
-    indiceAtual = (indiceAtual + 1) % slides.length; // Próximo slide
+    indiceAtual = (indiceAtual + 1) % slides.length; 
     definirPosicaoPorIndice();
-}, 8000); // 8000 milissegundos = 8 segundos
+}, 8000);

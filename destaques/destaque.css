@@ -15,13 +15,13 @@
 
 .promo-wrapper {
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     margin: 0 1em  ;
     position: relative;
-    height: 450px;
+    height: 29.125em;
 }
 
 .promo-header {
@@ -35,21 +35,21 @@
 
 .promo-header .ofertas {
     position: absolute;
-    top: 10px;
-    right: -10px;
+    top: 0.625em;
+    right: -0.625em;
     background-color: #ff2837;
     color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
+    padding: 0.3125em 0.9375em;
+    border-radius: 0.3125em;
     font-weight: bold;
 }
 
 .promo-content {
     position: absolute;
-    top: 130px;
+    top: 6.9em;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 1.25em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -58,16 +58,16 @@
 }
 
 .promo-content img {
-    max-width: 150px;
+    max-width: 9.375em;
     margin-left: 0.5em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     justify-content: flex-start;
 }
 
 .promo-content h1 {
     font-size: 1.8rem;
     color: black;
-    margin: 15px 0;
+    margin: 0.9375em 0;
     text-align: start;
 }
 
@@ -83,10 +83,10 @@
 }
 
 .promo-buttons {
-    margin-top: 20px;
+    margin-top: 1.25em;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
     justify-content: center;
 }
 
@@ -112,8 +112,8 @@
     font-family: 'Lato', 'Lato-local-backup', 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    border: 1px solid #127045; 
-    border-radius: 5px;
+    border: 0.0625em solid #127045; 
+    border-radius: 0.3125em;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
@@ -169,7 +169,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
     border-radius: 0.75em;
     border-top: #127045 solid 0.75em;
     margin: 1em;
@@ -219,7 +219,7 @@
     }
 
     .promo-wrapper{
-        height: 380px;
+        height: 23.75em;
     } 
 
     .promo-mobile{
@@ -232,12 +232,11 @@
     
     .promo-content .ofertas{
         position: absolute;
-        top: 25px;
-        right: -5px;
+        right: -0.3125em;
         background-color: #ff2837;
         color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
+        padding: 0.3125em 0.625em;
+        border-radius: 0.3125em;
         font-weight: bold;
     }
 
@@ -248,14 +247,14 @@
 
     .destaques-titulo{
         width: 100%;
-        max-width: 1220px;
+        max-width: 75rem;
         margin: 1em auto;
     }
     .destaques{
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
-        max-width: 1220px;
+        max-width: 75em;
         margin: 0 auto;
         flex-direction: row;
     }
@@ -271,7 +270,7 @@
     
     .promo-wrapper{
         border: none;
-        height: 600px;
+        height: 37.5em;
         box-shadow: none;
 
     }
@@ -282,9 +281,9 @@
 
     .promo-header img{
         width: 100%;
-        height: 430px;
+        height: 26.875em;
         content: url('img/genio-pequeno.jpg');
-        border-radius: 20px;
+        border-radius: 1.25em;
     } 
 
     .promo-content {
@@ -292,21 +291,21 @@
         top:51.5%;
         left: 50%;
         width: 90%;
-        max-width: 700px;
-        padding: 20px;
+        max-width: 43.75em;
+        padding: 1.25em;
         border-radius: 1em;
         display: flex;
         flex-direction: column;
         background-color: white;
         font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
         transform: translate(-50%);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
     }
     
     .cartoes-clube{
         width: 30%;
         height: 100%;
-        gap:50px
+        gap:3.125em
     }
 
    

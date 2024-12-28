@@ -141,8 +141,6 @@
 }
 
 
-
-/* Estilo geral para o footer */
 footer {
     width: 100%;
     height: 5em;
@@ -178,7 +176,7 @@ footer img.footer-img {
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        border-top: 1px solid #ededed;
+        border-top: 0.0625em solid #ededed;
         width: 100%;
     }
 
@@ -191,7 +189,7 @@ footer img.footer-img {
         align-items: flex-start;
         font-family: 'Lato', "Lucida Grande", Tahoma, sans-serif;
         color: #2c2c2c;
-        width: 200px;
+        width: 12.5em;
         padding: 0.5em;
         height: 100%;
     }
@@ -234,7 +232,7 @@ footer img.footer-img {
     }
 
     .footer-coluna-2 {
-       width: 300px;
+       width: 18.75em;
        gap:1em
     }
 

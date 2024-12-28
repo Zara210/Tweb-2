@@ -3,19 +3,19 @@
     flex-direction: column;
     align-items: center;
     color: #2c2c2c;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0; 
-    border-radius: 15px; 
-    padding: 20px;
+    border-top: 0.0625em solid #e0e0e0;
+    border-bottom: 0.0625em solid #e0e0e0; 
+    border-radius: 0.9375em; 
+    padding: 1.25em ;
     width: 90%;
-    max-width: 500px;
-    margin: 5px auto; 
+    max-width: 31.25em;
+    margin: 0.3125em auto; 
 }
 
 .restricoes img {
-    width: 50%; /* Ajusta a largura da imagem */
+    width: 50%; 
     height: auto;
-    margin-bottom: 1em; /* Espaçamento abaixo da imagem */
+    margin-bottom: 1em;
 }
 
 .restricoes h1 {
@@ -23,7 +23,7 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 0.5em; /* Espaço abaixo do título */
+    margin-bottom: 0.5em; 
     width: 80%;
 
 }
@@ -32,7 +32,7 @@
     font-family: "Lato", "Lucida Grande", Tahoma, sans-serif;
     font-size: 1.1rem;
     margin: 0;
-    margin-bottom: 1em; /* Espaço entre o parágrafo e o botão */
+    margin-bottom: 1em;
 }
 
 .restricoes button {
@@ -45,7 +45,7 @@
     font-weight: bold;
     font-size: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 1em auto;
@@ -57,7 +57,6 @@
 }
 
 
-/* Mídia query para telas de 768px ou menores */
 @media screen and (min-width: 768px) {
     .restricoes {
       display: flex;
@@ -66,8 +65,8 @@
       margin-bottom: 1em;
       gap: 0.5em;
       padding: 1.5em;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 4px 15px rgba(0, 0, 0, 0.15);
-      max-width: 1190px;
+      box-shadow: 0 0.25em 0.625em rgba(0, 0, 0, 0.1), 0 0.25em 0.9375em rgba(0, 0, 0, 0.15);
+      max-width: 74.375em;
     }
   
     .restricoes img {

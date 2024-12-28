@@ -1,4 +1,4 @@
-/*Container*/
+
 .container-actions { 
     margin: 1.625em 0.625em;
     text-align: center;
@@ -33,7 +33,7 @@
     padding: 0.625em;
     width: 100%;
     margin: 0 auto;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.2);  
 }
 
 .container-action img {
@@ -49,7 +49,7 @@
     font-family: 'Montserrat', 'Montserrat-local-backup', Arial, Helvetica, sans-serif;
 }
 
-/*header*/
+
 .header-container {
     display: flex;
     align-items: center;
@@ -69,7 +69,6 @@
 
 
 
-/*Expandido*/
 .expanded-content {
     margin-top: 0.625em;
     max-height: 0;
@@ -135,16 +134,13 @@
         padding: 0.625em;
         width: 100%;
         margin: 0 auto;  
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+        box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.2);  
     }
 }
 
 
 
 
-/*Reservar um Voo*/
-
-/* Tipo de voo */
 .tipo-voo,
 .tipo-dados,
 .por-tipo-voo {
@@ -193,7 +189,7 @@
 }
 
 
-/* Checkbox */
+
 .checkbox-voo {
     padding: 0.9375em 0;
     font-size: 1rem;
@@ -243,7 +239,7 @@
 }
 
 
-/*Label*/
+
 .container-viagem,
 .container-estado-voo {
     font-size: 1rem;
@@ -329,7 +325,7 @@
 
 
 
-/* Botão */
+
 .button-add-TAP button {
     display: block;
     width: 97%;
@@ -354,7 +350,7 @@
 }
 
 
-/*As minhas Viagens*/
+
 
 .container-login h1,
 .container-reserva h1{
@@ -516,13 +512,13 @@
     }
 }
 
-/*Chek-in*/
+
 
 .tipo-dados label{
     padding: 0.4375em 3.300em;  
 }
 
-/*Estado Voo*/
+
 
 
 
@@ -628,8 +624,8 @@
     .container-tipo-voo,
     .container-datas,
     .container-cidade {
-        flex-basis: 48%; /* Cada contêiner ocupa 48% da largura disponível, permitindo 2 itens por linha */
-        margin: 0.375em 0; /* Ajusta a margem para não haver grande espaço entre os itens */
+        flex-basis: 48%;
+        margin: 0.375em 0; 
     }
     #prosseguir-btn,
     #prosseguir-btn-pc{
@@ -647,7 +643,7 @@
 
 
 
-/* Inicialmente, o resultado dos voos está escondido */
+
 #resultado-voo {
     display: none; 
 }
@@ -673,7 +669,7 @@
     border-radius: 0.3125em;
     padding: 0.625em;
     background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0.25em 0.375em rgba(0, 0, 0, 0.1);
 }
 
 h2 {
