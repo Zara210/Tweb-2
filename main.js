@@ -1,11 +1,11 @@
 window.onscroll = function () {
     atualizarNavbar();
-    atualizarDropdownPosition(); 
+    atualizarHoverPosition(); 
 };
 
 window.onresize = function () {
     atualizarNavbar(); 
-    atualizarDropdownPosition(); 
+    atualizarHoverPosition(); 
 };
 
 function atualizarNavbar() {
@@ -43,14 +43,14 @@ function atualizarNavbar() {
     }
 }
 
-function atualizarDropdownPosition() {
-    const dropdowns = document.querySelectorAll('.nav-link-item.has-dropdown .dropdown-background');
+function atualizarHoverPosition() {
+    const hovers = document.querySelectorAll('.nav-link-item.has-hover .hover-background');
 
-    dropdowns.forEach(function(dropdownBackground) {
+    hovers.forEach(function(hoverBackground) {
         if (window.scrollY > 15) {
-            dropdownBackground.style.top = '50px';
+            hoverBackground.style.top = '50px';
         } else {
-            dropdownBackground.style.top = '135px';
+            hoverBackground.style.top = '135px';
         }
     });
 }

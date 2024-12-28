@@ -50,7 +50,7 @@
 }
 
 
-.dropdown-background {
+.hover-background {
     position: fixed;
     top: 8.4375em;  
     left: 50%;  
@@ -64,7 +64,7 @@
 }
 
 
-.dropdown {
+.hover {
     display: none;
     position: absolute;
     top: 5%; 
@@ -82,15 +82,15 @@
     height: auto;
 }
 
-.nav-link-item:hover .dropdown-background,
-.nav-link-item:hover .dropdown {
+.nav-link-item:hover .hover-background,
+.nav-link-item:hover .hover {
     display: flex;
     visibility: visible;
 }
 
 
 
-.dropdown-container {
+.hover-container {
     display: flex;
     width: 100%;
     padding: 0.625em;
@@ -98,7 +98,7 @@
 }
 
 
-.dropdown-item {
+.hover-item {
     display: flex;
     flex-direction: column;
     gap: 0.3125em;
@@ -129,7 +129,7 @@
 
 
 
-.dropdown-item a,
+.hover-item a,
 .bottom-container a {
     color: #4a4a4a;
     text-decoration: none;
@@ -143,7 +143,7 @@
 }
 
 
-.dropdown-item a::after,
+.hover-item a::after,
 .bottom-container a::after {
     content: ""; 
     position: absolute;
@@ -157,29 +157,29 @@
 }
 
 
-.dropdown-item a:hover,
+.hover-item a:hover,
 .bottom-container a:hover {
     color: #127045;
 }
 
-.dropdown-item a:hover::after,
+.hover-item a:hover::after,
 .bottom-container a:hover:after {
     width: 10%;
 }
 
 
 
-.second-dropdown-item {
+.second-hover-item {
     flex-grow: 2;
 }
 
-.second-dropdown-item .sublinks {
+.second-hover-item .sublinks {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875em;
 }
 
-.dropdown-item .sublinks a {
+.hover-item .sublinks a {
     padding: 0.5em 0.9375em;
     min-width: 12.5em;
 }
@@ -204,3 +204,19 @@
 }
 
 
+
+@media screen and (min-width:1000px) {
+    .hover{
+        width: auto;
+        height: auto;
+        max-width: 900px;
+    }
+    
+}
+
+@media screen and (min-width:1220px) {
+    .hover {
+        max-width: none;
+    }
+    
+}
