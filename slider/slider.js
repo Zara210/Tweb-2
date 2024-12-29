@@ -42,7 +42,7 @@ function terminarArraste() {
 
 
 function definirPosicaoPorIndice() {
-    const larguraSlider = slider.ozffsetWidth;
+    const larguraSlider = slider.offsetWidth;
     posicaoAtual = -indiceAtual * larguraSlider;
     posicaoAnterior = posicaoAtual;
     sliderWrapper.style.transform = `translateX(${posicaoAtual}px)`;
