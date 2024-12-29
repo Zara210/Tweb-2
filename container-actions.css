@@ -730,7 +730,7 @@ h2 {
     justify-content: space-between;
     align-items: center; 
     gap: 0.625em; 
-    margin: 1.25em;
+    margin: 1em auto;
 }
     
 .footer-container-action,
@@ -806,6 +806,7 @@ h2 {
 .footer-link {
     display: flex;
     align-items: center; 
+    justify-content: center;
 }
 
 .footer-link a:hover{
