@@ -200,6 +200,7 @@
 .checkbox-voo-item {
     display: flex;
     align-items: center;
+   
 }
 
 .checkbox-voo input[type="checkbox"] {

@@ -4,6 +4,7 @@
 
 .ver-mais{
     display: none;
+    cursor: pointer;
 }
 
 .header-slider-paragens{
@@ -33,6 +34,7 @@
     border: 0.0625em solid #127045;
     padding: 0.6125em;
     border-radius: 2.5em;
+    cursor: pointer;
 }
 
 .paragens-select option {
@@ -69,6 +71,7 @@
     border-radius: 0.5em;
     margin-bottom: 0.625em;
     box-shadow: 0 0.3125em 0.125em rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     
 }
 
@@ -215,6 +218,7 @@
     .header-slider-paragens h1 {
         display: flex;
         margin-right: 3em;
+        cursor: pointer;
     }
 
     .header-slider-paragens h1:hover {

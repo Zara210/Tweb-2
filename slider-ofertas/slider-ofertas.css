@@ -166,6 +166,7 @@
     overflow: hidden;
     border-radius: 0.5em;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 }
