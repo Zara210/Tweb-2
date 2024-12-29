@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.add('menu-open');
         nav.classList.add('menu-open');
         body.classList.add('menu-open'); 
-        body.style.overflow = 'hidden'; 
     });
 
     
@@ -19,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
    
-    document.addEventListener('click', (e) => {
-        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+    document.addEventListener('click', (clique) => {
+        if (!menu.contains(clique.target) && !menuBtn.contains(clique.target)) {
             closeMenu();
         }
     });
@@ -37,15 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('menu-open'); 
         nav.classList.remove('menu-open'); 
         body.classList.remove('menu-open');
-        body.style.overflow = ''; 
     };
 
    
     const mainMenuItems = document.querySelectorAll('.menu-list > li.has-submenu > .menu-item'); 
 
     mainMenuItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation(); 
+        item.addEventListener('click', function (clique) {
+            clique.stopPropagation(); 
 
             const submenu = this.nextElementSibling; 
             const arrowIcon = this.querySelector('.arrow-icon'); 
@@ -71,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const submenuItems = document.querySelectorAll('.submenu li.has-submenu > .menu-item');
 
     submenuItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation(); 
+        item.addEventListener('click', function (clique) {
+            clique.stopPropagation(); 
 
             const submenu = this.nextElementSibling; 
             const arrowIcon = this.querySelector('.arrow-icon');

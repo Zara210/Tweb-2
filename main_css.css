@@ -1,4 +1,4 @@
-/* Estilos principais da página */
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -194,7 +194,7 @@ nav {
     .alerta-banner {
         padding: 1.5625em;
     }
-    /* Estilo para as imagens dentro do alerta-banner */
+ 
     .alerta-banner .seta-img {
         width: 0.9375em;
         height: 0.9375em;

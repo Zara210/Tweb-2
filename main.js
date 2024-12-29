@@ -56,12 +56,12 @@ function atualizarHoverPosition() {
 }
 
 
-const descriptions = document.querySelectorAll('.descricao');
-    let currentIndex = 0;
+const descricao = document.querySelectorAll('.descricao');
+    let Indice = 0;
 
-    const updateDescription = (direction) => {
-        currentIndex = (currentIndex + direction + descriptions.length) % descriptions.length;
-        descriptions.forEach((desc, i) => desc.classList.toggle('active', i === currentIndex));
+    const updateDescription = (direcao) => {
+        Indice = (Indice + direcao + descricao.length) % descricao.length;
+        descricao.forEach((desc, i) => desc.classList.toggle('active', i === Indice));
     };
 
     document.getElementById('prev').addEventListener('click', () => updateDescription(-1));
